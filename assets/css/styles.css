@@ -1,0 +1,158 @@
+/* ==========================================================================
+   INGGEO MYM SpA - Custom Industrial Styles & Animations
+   ========================================================================== */
+
+:root {
+  --color-brand-purple: #905cfb;
+  --color-brand-purple-dark: #6d28d9;
+  --color-brand-purple-glow: rgba(144, 92, 251, 0.35);
+  --color-brand-cyan: #06b6d4;
+  --color-brand-amber: #f59e0b;
+  --color-bg-dark: #07090e;
+  --color-bg-card: #0f1422;
+  --color-bg-card-hover: #151b2e;
+  --color-border: #1e293b;
+  --color-border-glow: rgba(144, 92, 251, 0.4);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: #07090e;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #905cfb;
+}
+
+/* Background Grids & Patterns */
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+.bg-radial-gradient {
+  background: radial-gradient(circle at 50% 0%, rgba(144, 92, 251, 0.15) 0%, rgba(7, 9, 14, 0) 70%);
+}
+
+.bg-radial-glow {
+  background: radial-gradient(circle at center, rgba(144, 92, 251, 0.12) 0%, transparent 70%);
+}
+
+/* Glassmorphism Classes */
+.glass-panel {
+  background: rgba(15, 20, 34, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-nav {
+  background: rgba(7, 9, 14, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.glass-card {
+  background: linear-gradient(135deg, rgba(21, 27, 46, 0.65) 0%, rgba(15, 20, 34, 0.85) 100%);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card:hover {
+  border-color: rgba(144, 92, 251, 0.4);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 30px -10px rgba(144, 92, 251, 0.18);
+}
+
+/* Glow Borders & Accents */
+.border-purple-glow {
+  border-color: rgba(144, 92, 251, 0.5);
+  box-shadow: 0 0 20px rgba(144, 92, 251, 0.2);
+}
+
+.text-gradient-purple {
+  background: linear-gradient(135deg, #ffffff 30%, #c4b5fd 70%, #905cfb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-silver {
+  background: linear-gradient(180deg, #ffffff 0%, #94a3b8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-primary-purple {
+  background: linear-gradient(135deg, #905cfb 0%, #7c3aed 100%);
+  box-shadow: 0 4px 18px rgba(144, 92, 251, 0.35);
+  transition: all 0.25s ease;
+}
+
+.btn-primary-purple:hover {
+  background: linear-gradient(135deg, #9d6efd 0%, #8b5cf6 100%);
+  box-shadow: 0 6px 24px rgba(144, 92, 251, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Pulse Glow Animation */
+@keyframes pulse-subtle {
+  0%, 100% {
+    opacity: 0.25;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.45;
+    transform: scale(1.03);
+  }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 4s infinite ease-in-out;
+}
+
+/* Smooth reveal animation classes */
+.reveal-init {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Technical Corner Accents */
+.tech-corner {
+  position: relative;
+}
+.tech-corner::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #905cfb;
+  border-left: 2px solid #905cfb;
+}
+.tech-corner::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid #905cfb;
+  border-right: 2px solid #905cfb;
+}
