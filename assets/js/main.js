@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
       );
 
       // WhatsApp direct number for INGGEO (Configurable)
-      const waNumber = "56900000000"; // Reemplazable con el número comercial de INGGEO
+      const waNumber = "56932390306"; // Número comercial de INGGEO MYM SpA
       const waUrl = `https://api.whatsapp.com/send?phone=${waNumber}&text=${waText}`;
 
       if (formFeedback) {
