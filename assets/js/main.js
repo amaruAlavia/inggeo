@@ -12,36 +12,47 @@ const initApp = () => {
   const mobileMenuBtn = document.getElementById('mobile-menu-btn');
   const mobileMenu = document.getElementById('mobile-menu');
   const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+  const menuIconOpen = document.getElementById('menu-icon-open');
+  const menuIconClose = document.getElementById('menu-icon-close');
 
   if (mobileMenuBtn && mobileMenu) {
+    const closeMobileMenu = () => {
+      mobileMenu.classList.add('hidden');
+      menuIconOpen?.classList.remove('hidden');
+      menuIconClose?.classList.add('hidden');
+      document.body.classList.remove('overflow-hidden');
+    };
+
+    const openMobileMenu = () => {
+      mobileMenu.classList.remove('hidden');
+      menuIconOpen?.classList.add('hidden');
+      menuIconClose?.classList.remove('hidden');
+      document.body.classList.add('overflow-hidden');
+    };
+
     mobileMenuBtn.addEventListener('click', () => {
       const isOpen = !mobileMenu.classList.contains('hidden');
       if (isOpen) {
-        mobileMenu.classList.add('hidden');
-        document.body.classList.remove('overflow-hidden');
+        closeMobileMenu();
       } else {
-        mobileMenu.classList.remove('hidden');
-        document.body.classList.add('overflow-hidden');
+        openMobileMenu();
       }
     });
 
     mobileLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        mobileMenu.classList.add('hidden');
-        document.body.classList.remove('overflow-hidden');
-      });
+      link.addEventListener('click', closeMobileMenu);
     });
   }
 
   // 2. Navbar Background Blur on Scroll
   const navbar = document.getElementById('main-navbar');
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 40) {
-      navbar?.classList.add('shadow-2xl', 'shadow-purple-950/20', 'bg-slate-950/95');
-      navbar?.classList.remove('bg-slate-950/80');
+    if (window.scrollY > 30) {
+      navbar?.classList.add('shadow-2xl', 'shadow-purple-950/30', 'bg-slate-950/98', 'border-slate-800');
+      navbar?.classList.remove('bg-slate-950/90');
     } else {
-      navbar?.classList.remove('shadow-2xl', 'shadow-purple-950/20', 'bg-slate-950/95');
-      navbar?.classList.add('bg-slate-950/80');
+      navbar?.classList.remove('shadow-2xl', 'shadow-purple-950/30', 'bg-slate-950/98');
+      navbar?.classList.add('bg-slate-950/90');
     }
   });
 
