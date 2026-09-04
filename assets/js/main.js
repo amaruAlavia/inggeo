@@ -2,7 +2,12 @@
    INGGEO MYM SpA - Main Interactive Script
    ========================================================================== */
 
-document.addEventListener('DOMContentLoaded', () => {
+const initApp = () => {
+  // Inicialización inmediata de Lucide Icons
+  if (window.lucide && typeof window.lucide.createIcons === 'function') {
+    window.lucide.createIcons();
+  }
+
   // 1. Mobile Menu Toggle
   const mobileMenuBtn = document.getElementById('mobile-menu-btn');
   const mobileMenu = document.getElementById('mobile-menu');
@@ -191,7 +196,21 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // 8. Lucide Icons initialization
-  if (window.lucide) {
+  if (window.lucide && typeof window.lucide.createIcons === 'function') {
+    window.lucide.createIcons();
+  }
+};
+
+// Ejecución garantizada: Si el DOM ya cargó, se ejecuta de inmediato sin esperar
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initApp);
+} else {
+  initApp();
+}
+
+// Respaldo tras carga completa de recursos
+window.addEventListener('load', () => {
+  if (window.lucide && typeof window.lucide.createIcons === 'function') {
     window.lucide.createIcons();
   }
 });
