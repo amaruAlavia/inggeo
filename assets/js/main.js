@@ -28,9 +28,13 @@ const initApp = () => {
       menuIconOpen?.classList.add('hidden');
       menuIconClose?.classList.remove('hidden');
       document.body.classList.add('overflow-hidden');
+      if (window.lucide && typeof window.lucide.createIcons === 'function') {
+        window.lucide.createIcons();
+      }
     };
 
-    mobileMenuBtn.addEventListener('click', () => {
+    mobileMenuBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
       const isOpen = !mobileMenu.classList.contains('hidden');
       if (isOpen) {
         closeMobileMenu();
@@ -41,6 +45,20 @@ const initApp = () => {
 
     mobileLinks.forEach(link => {
       link.addEventListener('click', closeMobileMenu);
+    });
+
+    // Cerrar con tecla Escape
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !mobileMenu.classList.contains('hidden')) {
+        closeMobileMenu();
+      }
+    });
+
+    // Cerrar al hacer clic fuera del menú o barra de navegación
+    document.addEventListener('click', (e) => {
+      if (!mobileMenu.contains(e.target) && !mobileMenuBtn.contains(e.target) && !mobileMenu.classList.contains('hidden')) {
+        closeMobileMenu();
+      }
     });
   }
 
