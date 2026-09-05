@@ -224,7 +224,115 @@ const initApp = () => {
     statsObserver.observe(statsSection);
   }
 
-  // 8. Lucide Icons initialization
+  // 8. WhatsApp Chat Widget Controller
+  const waToggleBtn = document.getElementById('wa-widget-toggle');
+  const waCloseBtn = document.getElementById('wa-widget-close');
+  const waChatWindow = document.getElementById('wa-chat-window');
+  const waTooltip = document.getElementById('wa-widget-tooltip');
+  const waInput = document.getElementById('wa-widget-input');
+  const waSendBtn = document.getElementById('wa-widget-send');
+  const waQuickChips = document.querySelectorAll('.wa-quick-chip');
+  const footerWaBtn = document.getElementById('footer-wa-btn');
+
+  const waPhone = "56932390306";
+
+  const openWaChat = () => {
+    if (!waChatWindow) return;
+    waChatWindow.classList.remove('hidden');
+    setTimeout(() => {
+      waChatWindow.classList.remove('scale-95', 'opacity-0');
+      waChatWindow.classList.add('scale-100', 'opacity-100');
+    }, 10);
+    waTooltip?.classList.add('hidden');
+    waInput?.focus();
+    if (window.lucide && typeof window.lucide.createIcons === 'function') {
+      window.lucide.createIcons();
+    }
+  };
+
+  const closeWaChat = () => {
+    if (!waChatWindow) return;
+    waChatWindow.classList.remove('scale-100', 'opacity-100');
+    waChatWindow.classList.add('scale-95', 'opacity-0');
+    setTimeout(() => {
+      waChatWindow.classList.add('hidden');
+    }, 250);
+  };
+
+  const sendWaMessage = (customMsg) => {
+    const message = customMsg || waInput?.value?.trim() || "Hola, me gustaría solicitar información y cotización sobre sus servicios.";
+    const waUrl = `https://api.whatsapp.com/send?phone=${waPhone}&text=${encodeURIComponent(message)}`;
+    window.open(waUrl, '_blank');
+    if (waInput) waInput.value = '';
+  };
+
+  if (waToggleBtn && waChatWindow) {
+    waToggleBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isClosed = waChatWindow.classList.contains('hidden');
+      if (isClosed) {
+        openWaChat();
+      } else {
+        closeWaChat();
+      }
+    });
+
+    waCloseBtn?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      closeWaChat();
+    });
+
+    waTooltip?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      openWaChat();
+    });
+
+    if (footerWaBtn) {
+      footerWaBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        openWaChat();
+        waChatWindow.scrollIntoView({ behavior: 'smooth', block: 'end' });
+      });
+    }
+
+    waSendBtn?.addEventListener('click', () => {
+      sendWaMessage();
+    });
+
+    waInput?.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        sendWaMessage();
+      }
+    });
+
+    waQuickChips.forEach(chip => {
+      chip.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const msg = chip.getAttribute('data-msg');
+        if (waInput) {
+          waInput.value = msg;
+        }
+        sendWaMessage(msg);
+      });
+    });
+
+    // Cerrar al hacer clic fuera del widget
+    document.addEventListener('click', (e) => {
+      if (!waChatWindow.contains(e.target) && !waToggleBtn.contains(e.target) && !footerWaBtn?.contains(e.target) && !waChatWindow.classList.contains('hidden')) {
+        closeWaChat();
+      }
+    });
+
+    // Cerrar con Escape
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !waChatWindow.classList.contains('hidden')) {
+        closeWaChat();
+      }
+    });
+  }
+
+  // 9. Lucide Icons initialization
   if (window.lucide && typeof window.lucide.createIcons === 'function') {
     window.lucide.createIcons();
   }
