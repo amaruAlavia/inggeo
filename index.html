@@ -100,18 +100,14 @@
 
         <!-- Logo en el Centro (Centrado en todas las resoluciones) -->
         <div class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 flex items-center justify-center flex-shrink-0 z-20">
-          <a href="#inicio" class="flex items-center gap-2.5 sm:gap-3 group">
-            <div class="bg-black/60 p-1.5 rounded-lg border border-slate-700/80 group-hover:border-purple-500 transition shadow-md">
-              <img src="assets/images/logo.jpg" alt="INGGEO MYM SpA" class="h-9 sm:h-10 w-auto object-contain rounded"
+          <a href="#inicio" class="flex items-center group" aria-label="INGGEO MYM SpA - Inicio">
+            <div class="bg-black/60 p-1.5 sm:p-2 rounded-xl border border-slate-700/80 group-hover:border-purple-500 transition shadow-md flex items-center justify-center">
+              <img src="assets/images/logo.jpg" alt="INGGEO MYM SpA" class="h-10 sm:h-11 w-auto object-contain rounded"
                 onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');" />
-              <div class="hidden flex-col">
+              <div class="hidden flex-col items-center">
                 <span class="font-heading font-black text-xl tracking-wider text-white">INGGEO</span>
                 <span class="text-[9px] tracking-widest text-brand-purple font-bold uppercase -mt-1">MYM SpA</span>
               </div>
-            </div>
-            <div class="text-left hidden min-[440px]:block">
-              <span class="text-xs sm:text-sm font-bold text-white block font-heading tracking-wide whitespace-nowrap leading-tight">INGGEO MYM SpA</span>
-              <span class="text-[9px] text-purple-400 hidden sm:block tracking-wider uppercase font-medium">Soluciones en Ingeniería y Construcción</span>
             </div>
           </a>
         </div>
