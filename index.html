@@ -61,7 +61,11 @@
       font-family: 'Inter', sans-serif;
     }
 
-    h1, h2, h3, h4, .font-heading {
+    h1,
+    h2,
+    h3,
+    h4,
+    .font-heading {
       font-family: 'Montserrat', sans-serif;
     }
 
@@ -99,9 +103,11 @@
         <div class="flex-1 hidden md:block"></div>
 
         <!-- Logo en el Centro (Centrado en todas las resoluciones) -->
-        <div class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 flex items-center justify-center flex-shrink-0 z-20">
+        <div
+          class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 flex items-center justify-center flex-shrink-0 z-20">
           <a href="#inicio" class="flex items-center gap-2.5 sm:gap-3 group" aria-label="INGGEO MYM SpA - Inicio">
-            <div class="bg-black/60 p-1.5 sm:p-2 rounded-xl border border-slate-700/80 group-hover:border-purple-500 transition shadow-md flex items-center justify-center">
+            <div
+              class="bg-black/60 p-1.5 sm:p-2 rounded-xl border border-slate-700/80 group-hover:border-purple-500 transition shadow-md flex items-center justify-center">
               <img src="assets/images/logo.jpg" alt="INGGEO MYM SpA" class="h-9 sm:h-10 w-auto object-contain rounded"
                 onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');" />
               <div class="hidden flex-col items-center">
@@ -110,7 +116,9 @@
               </div>
             </div>
             <div class="text-left hidden min-[480px]:block">
-              <span class="text-[10px] sm:text-xs text-purple-300 font-semibold tracking-wider uppercase block leading-tight">Soluciones en Ingeniería y Construcción</span>
+              <span
+                class="text-[10px] sm:text-xs text-purple-300 font-semibold tracking-wider uppercase block leading-tight">Soluciones
+                en Ingeniería y Construcción</span>
             </div>
           </a>
         </div>
@@ -138,16 +146,18 @@
     </div>
 
     <!-- Menú Desplegable / Drawer (Disponible para todas las resoluciones) -->
-    <div id="mobile-menu" class="hidden bg-slate-950/98 backdrop-blur-xl border-b border-slate-800 shadow-2xl transition-all max-h-[calc(100vh-5rem)] overflow-y-auto">
+    <div id="mobile-menu"
+      class="hidden bg-slate-950/98 backdrop-blur-xl border-b border-slate-800 shadow-2xl transition-all max-h-[calc(100vh-5rem)] overflow-y-auto">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
-        
+
         <!-- Cabecera del Menú -->
         <div class="flex items-center justify-between pb-4 mb-5 border-b border-slate-800/80">
           <div class="flex items-center gap-2">
             <span class="w-2 h-2 rounded-full bg-brand-purple"></span>
             <span class="text-xs font-bold uppercase tracking-widest text-purple-300">Navegación General</span>
           </div>
-          <span class="text-xs text-slate-400 font-medium hidden sm:inline">INGGEO MYM SpA · Especialistas en Termofusión y HDPE</span>
+          <span class="text-xs text-slate-400 font-medium hidden sm:inline">INGGEO MYM SpA · Especialistas en
+            Termofusión y HDPE</span>
         </div>
 
         <!-- Botón Cotizar Destacado para Mobile -->
@@ -164,64 +174,82 @@
 
         <!-- Enlaces en Rejilla Responsive -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-3">
-          <a href="#inicio" class="mobile-nav-link flex items-center gap-3 px-3.5 py-2.5 sm:py-3 rounded-xl text-sm font-medium text-slate-200 bg-slate-900/40 hover:bg-slate-900 hover:text-purple-300 border border-slate-800/80 hover:border-purple-500/50 transition">
-            <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-purple-950/60 border border-purple-800/40 flex items-center justify-center text-purple-400 flex-shrink-0">
+          <a href="#inicio"
+            class="mobile-nav-link flex items-center gap-3 px-3.5 py-2.5 sm:py-3 rounded-xl text-sm font-medium text-slate-200 bg-slate-900/40 hover:bg-slate-900 hover:text-purple-300 border border-slate-800/80 hover:border-purple-500/50 transition">
+            <div
+              class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-purple-950/60 border border-purple-800/40 flex items-center justify-center text-purple-400 flex-shrink-0">
               <i data-lucide="home" class="w-4 h-4"></i>
             </div>
             <span>Inicio</span>
           </a>
 
-          <a href="#nosotros" class="mobile-nav-link flex items-center gap-3 px-3.5 py-2.5 sm:py-3 rounded-xl text-sm font-medium text-slate-200 bg-slate-900/40 hover:bg-slate-900 hover:text-purple-300 border border-slate-800/80 hover:border-purple-500/50 transition">
-            <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-purple-950/60 border border-purple-800/40 flex items-center justify-center text-purple-400 flex-shrink-0">
+          <a href="#nosotros"
+            class="mobile-nav-link flex items-center gap-3 px-3.5 py-2.5 sm:py-3 rounded-xl text-sm font-medium text-slate-200 bg-slate-900/40 hover:bg-slate-900 hover:text-purple-300 border border-slate-800/80 hover:border-purple-500/50 transition">
+            <div
+              class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-purple-950/60 border border-purple-800/40 flex items-center justify-center text-purple-400 flex-shrink-0">
               <i data-lucide="users" class="w-4 h-4"></i>
             </div>
             <span>Quiénes Somos</span>
           </a>
 
-          <a href="#esencia" class="mobile-nav-link flex items-center gap-3 px-3.5 py-2.5 sm:py-3 rounded-xl text-sm font-medium text-slate-200 bg-slate-900/40 hover:bg-slate-900 hover:text-purple-300 border border-slate-800/80 hover:border-purple-500/50 transition">
-            <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-purple-950/60 border border-purple-800/40 flex items-center justify-center text-purple-400 flex-shrink-0">
+          <a href="#esencia"
+            class="mobile-nav-link flex items-center gap-3 px-3.5 py-2.5 sm:py-3 rounded-xl text-sm font-medium text-slate-200 bg-slate-900/40 hover:bg-slate-900 hover:text-purple-300 border border-slate-800/80 hover:border-purple-500/50 transition">
+            <div
+              class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-purple-950/60 border border-purple-800/40 flex items-center justify-center text-purple-400 flex-shrink-0">
               <i data-lucide="target" class="w-4 h-4"></i>
             </div>
             <span>Esencia, Misión y Visión</span>
           </a>
 
-          <a href="#propuesta" class="mobile-nav-link flex items-center gap-3 px-3.5 py-2.5 sm:py-3 rounded-xl text-sm font-medium text-slate-200 bg-slate-900/40 hover:bg-slate-900 hover:text-purple-300 border border-slate-800/80 hover:border-purple-500/50 transition">
-            <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-purple-950/60 border border-purple-800/40 flex items-center justify-center text-purple-400 flex-shrink-0">
+          <a href="#propuesta"
+            class="mobile-nav-link flex items-center gap-3 px-3.5 py-2.5 sm:py-3 rounded-xl text-sm font-medium text-slate-200 bg-slate-900/40 hover:bg-slate-900 hover:text-purple-300 border border-slate-800/80 hover:border-purple-500/50 transition">
+            <div
+              class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-purple-950/60 border border-purple-800/40 flex items-center justify-center text-purple-400 flex-shrink-0">
               <i data-lucide="award" class="w-4 h-4"></i>
             </div>
             <span>Propuesta de Valor</span>
           </a>
 
-          <a href="#especialidad" class="mobile-nav-link flex items-center gap-3 px-3.5 py-2.5 sm:py-3 rounded-xl text-sm font-semibold text-purple-300 bg-purple-950/30 hover:bg-purple-950/60 border border-purple-500/40 hover:border-purple-400 transition">
-            <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-brand-purple/40 border border-brand-purple/60 flex items-center justify-center text-purple-300 flex-shrink-0">
+          <a href="#especialidad"
+            class="mobile-nav-link flex items-center gap-3 px-3.5 py-2.5 sm:py-3 rounded-xl text-sm font-semibold text-purple-300 bg-purple-950/30 hover:bg-purple-950/60 border border-purple-500/40 hover:border-purple-400 transition">
+            <div
+              class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-brand-purple/40 border border-brand-purple/60 flex items-center justify-center text-purple-300 flex-shrink-0">
               <i data-lucide="layers" class="w-4 h-4"></i>
             </div>
             <span>Especialidad HDPE</span>
           </a>
 
-          <a href="#servicios" class="mobile-nav-link flex items-center gap-3 px-3.5 py-2.5 sm:py-3 rounded-xl text-sm font-medium text-slate-200 bg-slate-900/40 hover:bg-slate-900 hover:text-purple-300 border border-slate-800/80 hover:border-purple-500/50 transition">
-            <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-purple-950/60 border border-purple-800/40 flex items-center justify-center text-purple-400 flex-shrink-0">
+          <a href="#servicios"
+            class="mobile-nav-link flex items-center gap-3 px-3.5 py-2.5 sm:py-3 rounded-xl text-sm font-medium text-slate-200 bg-slate-900/40 hover:bg-slate-900 hover:text-purple-300 border border-slate-800/80 hover:border-purple-500/50 transition">
+            <div
+              class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-purple-950/60 border border-purple-800/40 flex items-center justify-center text-purple-400 flex-shrink-0">
               <i data-lucide="wrench" class="w-4 h-4"></i>
             </div>
             <span>Soluciones de Ingeniería</span>
           </a>
 
-          <a href="#filosofia" class="mobile-nav-link flex items-center gap-3 px-3.5 py-2.5 sm:py-3 rounded-xl text-sm font-medium text-slate-200 bg-slate-900/40 hover:bg-slate-900 hover:text-purple-300 border border-slate-800/80 hover:border-purple-500/50 transition">
-            <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-purple-950/60 border border-purple-800/40 flex items-center justify-center text-purple-400 flex-shrink-0">
+          <a href="#filosofia"
+            class="mobile-nav-link flex items-center gap-3 px-3.5 py-2.5 sm:py-3 rounded-xl text-sm font-medium text-slate-200 bg-slate-900/40 hover:bg-slate-900 hover:text-purple-300 border border-slate-800/80 hover:border-purple-500/50 transition">
+            <div
+              class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-purple-950/60 border border-purple-800/40 flex items-center justify-center text-purple-400 flex-shrink-0">
               <i data-lucide="clipboard-list" class="w-4 h-4"></i>
             </div>
             <span>Filosofía de Trabajo</span>
           </a>
 
-          <a href="#valores" class="mobile-nav-link flex items-center gap-3 px-3.5 py-2.5 sm:py-3 rounded-xl text-sm font-medium text-slate-200 bg-slate-900/40 hover:bg-slate-900 hover:text-purple-300 border border-slate-800/80 hover:border-purple-500/50 transition">
-            <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-purple-950/60 border border-purple-800/40 flex items-center justify-center text-purple-400 flex-shrink-0">
+          <a href="#valores"
+            class="mobile-nav-link flex items-center gap-3 px-3.5 py-2.5 sm:py-3 rounded-xl text-sm font-medium text-slate-200 bg-slate-900/40 hover:bg-slate-900 hover:text-purple-300 border border-slate-800/80 hover:border-purple-500/50 transition">
+            <div
+              class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-purple-950/60 border border-purple-800/40 flex items-center justify-center text-purple-400 flex-shrink-0">
               <i data-lucide="shield" class="w-4 h-4"></i>
             </div>
             <span>Nuestros Valores</span>
           </a>
 
-          <a href="#gestion" class="mobile-nav-link flex items-center gap-3 px-3.5 py-2.5 sm:py-3 rounded-xl text-sm font-medium text-slate-200 bg-slate-900/40 hover:bg-slate-900 hover:text-purple-300 border border-slate-800/80 hover:border-purple-500/50 transition">
-            <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-purple-950/60 border border-purple-800/40 flex items-center justify-center text-purple-400 flex-shrink-0">
+          <a href="#gestion"
+            class="mobile-nav-link flex items-center gap-3 px-3.5 py-2.5 sm:py-3 rounded-xl text-sm font-medium text-slate-200 bg-slate-900/40 hover:bg-slate-900 hover:text-purple-300 border border-slate-800/80 hover:border-purple-500/50 transition">
+            <div
+              class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-purple-950/60 border border-purple-800/40 flex items-center justify-center text-purple-400 flex-shrink-0">
               <i data-lucide="user-check" class="w-4 h-4"></i>
             </div>
             <span>Equipo, Calidad y Compromiso</span>
@@ -229,15 +257,20 @@
         </div>
 
         <!-- Fila de contacto directo en el pie del menú -->
-        <div class="mt-5 pt-4 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div
+          class="mt-5 pt-4 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div class="flex flex-wrap items-center justify-center sm:justify-start gap-4 text-xs text-slate-400">
-            <span class="flex items-center gap-1.5"><i data-lucide="phone" class="w-3.5 h-3.5 text-purple-400"></i> +56 9 3239 0306</span>
+            <span class="flex items-center gap-1.5"><i data-lucide="phone" class="w-3.5 h-3.5 text-purple-400"></i> +56
+              9 3239 0306</span>
             <span class="hidden sm:inline text-slate-600">·</span>
-            <span class="flex items-center gap-1.5"><i data-lucide="mail" class="w-3.5 h-3.5 text-purple-400"></i> contacto@inggeo.cl</span>
+            <span class="flex items-center gap-1.5"><i data-lucide="mail" class="w-3.5 h-3.5 text-purple-400"></i>
+              contacto@inggeo.cl</span>
             <span class="hidden md:inline text-slate-600">·</span>
-            <span class="hidden md:flex items-center gap-1.5"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-purple-400"></i> Arica, Chile</span>
+            <span class="hidden md:flex items-center gap-1.5"><i data-lucide="map-pin"
+                class="w-3.5 h-3.5 text-purple-400"></i> Arica, Chile</span>
           </div>
-          <a href="#contacto" class="mobile-nav-link w-full sm:w-auto bg-brand-purple hover:bg-brand-purple-dark text-white px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider transition shadow-md flex items-center justify-center gap-2">
+          <a href="#contacto"
+            class="mobile-nav-link w-full sm:w-auto bg-brand-purple hover:bg-brand-purple-dark text-white px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider transition shadow-md flex items-center justify-center gap-2">
             <i data-lucide="calculator" class="w-4 h-4"></i>
             <span>SOLICITAR COTIZACIÓN</span>
           </a>
@@ -265,13 +298,15 @@
       <div class="max-w-4xl">
 
         <!-- Header Corporativo -->
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-md bg-purple-950/60 border border-purple-500/40 text-purple-300 text-xs font-bold uppercase tracking-widest mb-6">
+        <div
+          class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-md bg-purple-950/60 border border-purple-500/40 text-purple-300 text-xs font-bold uppercase tracking-widest mb-6">
           <span class="w-2 h-2 rounded-full bg-purple-400 animate-pulse"></span>
           INGGEO MYM SpA · Norte de Chile
         </div>
 
         <!-- Titular Principal H1 -->
-        <h1 class="font-heading text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight mb-4">
+        <h1
+          class="font-heading text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight mb-4">
           INGGEO MYM SpA <br />
           <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-purple-300 to-white">
             EXPERTOS EN TERMOFUSIÓN Y GEOMEMBRANAS HDPE
@@ -289,7 +324,8 @@
         </p>
 
         <!-- Tríada de Pilares en Hero -->
-        <div class="inline-flex flex-wrap items-center gap-3 text-xs sm:text-sm font-semibold text-slate-200 mb-10 py-3 px-5 rounded-xl bg-slate-900/90 border border-slate-800 shadow-xl">
+        <div
+          class="inline-flex flex-wrap items-center gap-3 text-xs sm:text-sm font-semibold text-slate-200 mb-10 py-3 px-5 rounded-xl bg-slate-900/90 border border-slate-800 shadow-xl">
           <span class="flex items-center gap-2 text-purple-300">
             <i data-lucide="shield-check" class="w-4 h-4 text-purple-400"></i> Especialización técnica
           </span>
@@ -328,7 +364,8 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
       <div class="max-w-4xl mx-auto bg-slate-50/80 p-8 sm:p-12 rounded-2xl border border-slate-200 shadow-sm">
-        <div class="inline-block text-xs font-bold uppercase tracking-widest text-brand-purple bg-purple-100 px-3 py-1 rounded-md mb-3">
+        <div
+          class="inline-block text-xs font-bold uppercase tracking-widest text-brand-purple bg-purple-100 px-3 py-1 rounded-md mb-3">
           Quiénes Somos
         </div>
         <h2 class="font-heading text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight mb-6">
@@ -336,21 +373,29 @@
         </h2>
         <div class="space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed">
           <p>
-            INGGEO MYM SpA es una empresa de ingeniería y construcción especializada, con base en el norte de Chile y experiencia en proyectos asociados a construcción, infraestructura y minería.
+            INGGEO MYM SpA es una empresa de ingeniería y construcción especializada, con base en el norte de Chile y
+            experiencia en proyectos asociados a construcción, infraestructura y minería.
           </p>
           <p>
-            Nuestra principal fortaleza se encuentra en la termofusión, instalación de geomembranas HDPE y ejecución de sistemas de impermeabilización, especialidad respaldada por la experiencia y conocimiento técnico de nuestro equipo.
+            Nuestra principal fortaleza se encuentra en la termofusión, instalación de geomembranas HDPE y ejecución de
+            sistemas de impermeabilización, especialidad respaldada por la experiencia y conocimiento técnico de nuestro
+            equipo.
           </p>
           <p>
-            A partir de esta base, hemos desarrollado capacidades complementarias en obras hidráulicas, obras civiles y movimiento de tierras, lo que nos permite comprender las distintas etapas de un proyecto y participar de manera integral en su ejecución.
+            A partir de esta base, hemos desarrollado capacidades complementarias en obras hidráulicas, obras civiles y
+            movimiento de tierras, lo que nos permite comprender las distintas etapas de un proyecto y participar de
+            manera integral en su ejecución.
           </p>
           <div class="p-4 sm:p-5 bg-purple-50/80 border-l-4 border-brand-purple rounded-r-xl my-4">
             <p class="text-sm sm:text-base font-semibold text-slate-900">
-              Nuestra forma de trabajar combina tres capacidades fundamentales: Especialización técnica. Ingeniería aplicada. Ejecución en terreno.
+              Nuestra forma de trabajar combina tres capacidades fundamentales: Especialización técnica. Ingeniería
+              aplicada. Ejecución en terreno.
             </p>
           </div>
           <p>
-            Esta integración nos permite responder a los desafíos de cada obra con soluciones técnicamente confiables, seguras y eficientes, orientadas al cumplimiento de las especificaciones, estándares de calidad y compromisos establecidos con nuestros clientes.
+            Esta integración nos permite responder a los desafíos de cada obra con soluciones técnicamente confiables,
+            seguras y eficientes, orientadas al cumplimiento de las especificaciones, estándares de calidad y
+            compromisos establecidos con nuestros clientes.
           </p>
         </div>
       </div>
@@ -366,7 +411,8 @@
 
       <!-- NUESTRA ESENCIA -->
       <div class="mb-14 bg-white p-8 sm:p-10 rounded-2xl border border-slate-200 shadow-sm">
-        <div class="inline-block text-xs font-bold uppercase tracking-widest text-brand-purple bg-purple-100 px-3 py-1 rounded-md mb-3">
+        <div
+          class="inline-block text-xs font-bold uppercase tracking-widest text-brand-purple bg-purple-100 px-3 py-1 rounded-md mb-3">
           Nuestra Esencia
         </div>
         <h2 class="font-heading text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-5">
@@ -377,24 +423,31 @@
             En INGGEO creemos en el valor de la especialización.
           </p>
           <p>
-            Nuestra experiencia en termofusión y geomembranas HDPE representa el conocimiento técnico sobre el cual hemos construido nuestra trayectoria y constituye uno de nuestros principales elementos diferenciadores.
+            Nuestra experiencia en termofusión y geomembranas HDPE representa el conocimiento técnico sobre el cual
+            hemos construido nuestra trayectoria y constituye uno de nuestros principales elementos diferenciadores.
           </p>
           <p>
-            Pero entendemos también que los proyectos requieren una mirada integral. Por ello, hemos fortalecido nuestras capacidades de ingeniería y construcción, integrando distintas disciplinas para entregar soluciones que respondan tanto a los requerimientos técnicos como a las condiciones reales de ejecución en terreno.
+            Pero entendemos también que los proyectos requieren una mirada integral. Por ello, hemos fortalecido
+            nuestras capacidades de ingeniería y construcción, integrando distintas disciplinas para entregar soluciones
+            que respondan tanto a los requerimientos técnicos como a las condiciones reales de ejecución en terreno.
           </p>
         </div>
       </div>
 
       <!-- NUESTRO PROPÓSITO -->
-      <div class="mb-14 p-8 sm:p-10 rounded-2xl bg-gradient-to-r from-purple-950 via-slate-900 to-purple-950 text-white shadow-lg border border-purple-500/30">
-        <div class="inline-block text-xs font-bold uppercase tracking-widest text-purple-300 bg-purple-900/60 border border-purple-500/40 px-3 py-1 rounded-md mb-3">
+      <div
+        class="mb-14 p-8 sm:p-10 rounded-2xl bg-gradient-to-r from-purple-950 via-slate-900 to-purple-950 text-white shadow-lg border border-purple-500/30">
+        <div
+          class="inline-block text-xs font-bold uppercase tracking-widest text-purple-300 bg-purple-900/60 border border-purple-500/40 px-3 py-1 rounded-md mb-3">
           Nuestro Propósito
         </div>
         <h3 class="font-heading text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-4">
           Transformar experiencia técnica en soluciones que perduran.
         </h3>
         <p class="text-slate-300 text-sm sm:text-base leading-relaxed max-w-4xl">
-          Nuestro propósito es aportar conocimiento, capacidad técnica y experiencia de terreno para resolver desafíos de ingeniería y construcción, desarrollando soluciones confiables que contribuyan al correcto funcionamiento y durabilidad de las obras en las que participamos.
+          Nuestro propósito es aportar conocimiento, capacidad técnica y experiencia de terreno para resolver desafíos
+          de ingeniería y construcción, desarrollando soluciones confiables que contribuyan al correcto funcionamiento y
+          durabilidad de las obras en las que participamos.
         </p>
       </div>
 
@@ -412,10 +465,14 @@
             </div>
             <div class="space-y-3 text-slate-700 text-sm sm:text-base leading-relaxed">
               <p>
-                Entregar soluciones especializadas de ingeniería y construcción, con énfasis en termofusión, geomembranas HDPE y sistemas de impermeabilización, integrando experiencia técnica, profesionales calificados y capacidad de ejecución en terreno.
+                Entregar soluciones especializadas de ingeniería y construcción, con énfasis en termofusión,
+                geomembranas HDPE y sistemas de impermeabilización, integrando experiencia técnica, profesionales
+                calificados y capacidad de ejecución en terreno.
               </p>
               <p>
-                Complementamos nuestra especialidad mediante obras hidráulicas, obras civiles y movimiento de tierras, trabajando bajo principios de seguridad, calidad, eficiencia y cumplimiento para generar soluciones confiables y de valor para nuestros clientes.
+                Complementamos nuestra especialidad mediante obras hidráulicas, obras civiles y movimiento de tierras,
+                trabajando bajo principios de seguridad, calidad, eficiencia y cumplimiento para generar soluciones
+                confiables y de valor para nuestros clientes.
               </p>
             </div>
           </div>
@@ -432,10 +489,13 @@
             </div>
             <div class="space-y-3 text-slate-700 text-sm sm:text-base leading-relaxed">
               <p>
-                Consolidarnos como una empresa referente en el norte de Chile en soluciones especializadas de ingeniería, termofusión y geomembranas HDPE, reconocida por la experiencia de nuestro equipo, calidad de ejecución, capacidad de respuesta y confianza construida con nuestros clientes.
+                Consolidarnos como una empresa referente en el norte de Chile en soluciones especializadas de
+                ingeniería, termofusión y geomembranas HDPE, reconocida por la experiencia de nuestro equipo, calidad de
+                ejecución, capacidad de respuesta y confianza construida con nuestros clientes.
               </p>
               <p>
-                Buscamos crecer de manera sostenible, ampliando nuestras capacidades de ingeniería y construcción sin perder la especialización técnica que constituye la esencia de INGGEO.
+                Buscamos crecer de manera sostenible, ampliando nuestras capacidades de ingeniería y construcción sin
+                perder la especialización técnica que constituye la esencia de INGGEO.
               </p>
             </div>
           </div>
@@ -453,7 +513,8 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
       <div class="text-center max-w-3xl mx-auto mb-14">
-        <div class="inline-block text-xs font-bold uppercase tracking-widest text-brand-purple bg-purple-100 px-3 py-1 rounded-md mb-3">
+        <div
+          class="inline-block text-xs font-bold uppercase tracking-widest text-brand-purple bg-purple-100 px-3 py-1 rounded-md mb-3">
           Nuestra Propuesta de Valor
         </div>
         <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
@@ -468,35 +529,41 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
 
         <!-- Capacidad: Especialización -->
-        <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200 shadow-sm hover:border-brand-purple transition duration-200 flex flex-col">
+        <div
+          class="p-8 rounded-2xl bg-slate-50 border border-slate-200 shadow-sm hover:border-brand-purple transition duration-200 flex flex-col">
           <div class="w-12 h-12 rounded-xl bg-purple-100 text-brand-purple flex items-center justify-center mb-6">
             <i data-lucide="shield-check" class="w-6 h-6"></i>
           </div>
           <h3 class="font-heading text-xl font-bold text-slate-900 mb-3">Especialización</h3>
           <p class="text-slate-700 text-sm sm:text-base leading-relaxed flex-1">
-            Contamos con experiencia específica en termofusión, geomembranas HDPE y sistemas de impermeabilización, áreas que requieren conocimiento técnico, personal experimentado y procedimientos de ejecución adecuados.
+            Contamos con experiencia específica en termofusión, geomembranas HDPE y sistemas de impermeabilización,
+            áreas que requieren conocimiento técnico, personal experimentado y procedimientos de ejecución adecuados.
           </p>
         </div>
 
         <!-- Capacidad: Ingeniería aplicada -->
-        <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200 shadow-sm hover:border-brand-purple transition duration-200 flex flex-col">
+        <div
+          class="p-8 rounded-2xl bg-slate-50 border border-slate-200 shadow-sm hover:border-brand-purple transition duration-200 flex flex-col">
           <div class="w-12 h-12 rounded-xl bg-cyan-100 text-cyan-700 flex items-center justify-center mb-6">
             <i data-lucide="cpu" class="w-6 h-6"></i>
           </div>
           <h3 class="font-heading text-xl font-bold text-slate-900 mb-3">Ingeniería aplicada</h3>
           <p class="text-slate-700 text-sm sm:text-base leading-relaxed flex-1">
-            Analizamos los requerimientos de cada proyecto desde una perspectiva técnica y constructiva, considerando las condiciones de terreno, metodología de ejecución, recursos y requerimientos establecidos para la obra.
+            Analizamos los requerimientos de cada proyecto desde una perspectiva técnica y constructiva, considerando
+            las condiciones de terreno, metodología de ejecución, recursos y requerimientos establecidos para la obra.
           </p>
         </div>
 
         <!-- Capacidad: Capacidad de ejecución -->
-        <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200 shadow-sm hover:border-brand-purple transition duration-200 flex flex-col">
+        <div
+          class="p-8 rounded-2xl bg-slate-50 border border-slate-200 shadow-sm hover:border-brand-purple transition duration-200 flex flex-col">
           <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center mb-6">
             <i data-lucide="hard-hat" class="w-6 h-6"></i>
           </div>
           <h3 class="font-heading text-xl font-bold text-slate-900 mb-3">Capacidad de ejecución</h3>
           <p class="text-slate-700 text-sm sm:text-base leading-relaxed flex-1">
-            Contamos con equipos humanos y capacidades operacionales para llevar las soluciones a terreno, integrando nuestra especialidad con obras complementarias cuando el proyecto lo requiere.
+            Contamos con equipos humanos y capacidades operacionales para llevar las soluciones a terreno, integrando
+            nuestra especialidad con obras complementarias cuando el proyecto lo requiere.
           </p>
         </div>
 
@@ -519,7 +586,8 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
       <div class="text-center max-w-3xl mx-auto mb-14">
-        <div class="inline-block text-xs font-bold uppercase tracking-widest text-purple-300 bg-brand-purple/20 border border-brand-purple/40 px-3 py-1 rounded-md mb-3">
+        <div
+          class="inline-block text-xs font-bold uppercase tracking-widest text-purple-300 bg-brand-purple/20 border border-brand-purple/40 px-3 py-1 rounded-md mb-3">
           Nuestra Especialidad
         </div>
         <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight mb-4">
@@ -529,7 +597,10 @@
           "La geomembrana no es un servicio más dentro de INGGEO. Es nuestra especialidad."
         </blockquote>
         <p class="text-slate-300 text-sm sm:text-base leading-relaxed mt-4">
-          La termofusión y la instalación de geomembranas HDPE constituyen el núcleo técnico de INGGEO. Contamos con personal experimentado en la ejecución de sistemas de impermeabilización y contención mediante geomembranas de Polietileno de Alta Densidad, orientados a proyectos que requieren altos niveles de estanqueidad, resistencia y durabilidad.
+          La termofusión y la instalación de geomembranas HDPE constituyen el núcleo técnico de INGGEO. Contamos con
+          personal experimentado en la ejecución de sistemas de impermeabilización y contención mediante geomembranas de
+          Polietileno de Alta Densidad, orientados a proyectos que requieren altos niveles de estanqueidad, resistencia
+          y durabilidad.
         </p>
       </div>
 
@@ -537,30 +608,37 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
 
         <!-- 1 -->
-        <div class="p-6 rounded-xl bg-slate-800/90 border border-slate-700 hover:border-brand-purple transition duration-200 flex items-start gap-4">
-          <div class="w-10 h-10 rounded-lg bg-brand-purple/20 text-purple-400 flex items-center justify-center flex-shrink-0">
+        <div
+          class="p-6 rounded-xl bg-slate-800/90 border border-slate-700 hover:border-brand-purple transition duration-200 flex items-start gap-4">
+          <div
+            class="w-10 h-10 rounded-lg bg-brand-purple/20 text-purple-400 flex items-center justify-center flex-shrink-0">
             <i data-lucide="waves" class="w-5 h-5"></i>
           </div>
           <div>
             <h3 class="font-heading text-base font-bold text-white mb-1">Tranques y embalses</h3>
-            <p class="text-xs text-slate-400">Impermeabilización de grandes obras de almacenamiento hídrico y contención.</p>
+            <p class="text-xs text-slate-400">Impermeabilización de grandes obras de almacenamiento hídrico y
+              contención.</p>
           </div>
         </div>
 
         <!-- 2 -->
-        <div class="p-6 rounded-xl bg-slate-800/90 border border-slate-700 hover:border-brand-purple transition duration-200 flex items-start gap-4">
+        <div
+          class="p-6 rounded-xl bg-slate-800/90 border border-slate-700 hover:border-brand-purple transition duration-200 flex items-start gap-4">
           <div class="w-10 h-10 rounded-lg bg-cyan-500/20 text-cyan-400 flex items-center justify-center flex-shrink-0">
             <i data-lucide="droplet" class="w-5 h-5"></i>
           </div>
           <div>
             <h3 class="font-heading text-base font-bold text-white mb-1">Piscinas de acumulación y contención</h3>
-            <p class="text-xs text-slate-400">Piscinas para procesos industriales, faenas mineras y contención segura.</p>
+            <p class="text-xs text-slate-400">Piscinas para procesos industriales, faenas mineras y contención segura.
+            </p>
           </div>
         </div>
 
         <!-- 3 -->
-        <div class="p-6 rounded-xl bg-slate-800/90 border border-slate-700 hover:border-brand-purple transition duration-200 flex items-start gap-4">
-          <div class="w-10 h-10 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center flex-shrink-0">
+        <div
+          class="p-6 rounded-xl bg-slate-800/90 border border-slate-700 hover:border-brand-purple transition duration-200 flex items-start gap-4">
+          <div
+            class="w-10 h-10 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center flex-shrink-0">
             <i data-lucide="git-commit" class="w-5 h-5"></i>
           </div>
           <div>
@@ -570,7 +648,8 @@
         </div>
 
         <!-- 4 -->
-        <div class="p-6 rounded-xl bg-slate-800/90 border border-slate-700 hover:border-brand-purple transition duration-200 flex items-start gap-4">
+        <div
+          class="p-6 rounded-xl bg-slate-800/90 border border-slate-700 hover:border-brand-purple transition duration-200 flex items-start gap-4">
           <div class="w-10 h-10 rounded-lg bg-blue-500/20 text-blue-400 flex items-center justify-center flex-shrink-0">
             <i data-lucide="sliders" class="w-5 h-5"></i>
           </div>
@@ -581,35 +660,44 @@
         </div>
 
         <!-- 5 -->
-        <div class="p-6 rounded-xl bg-slate-800/90 border border-slate-700 hover:border-brand-purple transition duration-200 flex items-start gap-4">
-          <div class="w-10 h-10 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center flex-shrink-0">
+        <div
+          class="p-6 rounded-xl bg-slate-800/90 border border-slate-700 hover:border-brand-purple transition duration-200 flex items-start gap-4">
+          <div
+            class="w-10 h-10 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center flex-shrink-0">
             <i data-lucide="filter" class="w-5 h-5"></i>
           </div>
           <div>
-            <h3 class="font-heading text-base font-bold text-white mb-1">Sistemas de tratamiento y almacenamiento de aguas</h3>
-            <p class="text-xs text-slate-400">Plantas de tratamiento, reservorios y lagunas de evaporación o decantación.</p>
+            <h3 class="font-heading text-base font-bold text-white mb-1">Sistemas de tratamiento y almacenamiento de
+              aguas</h3>
+            <p class="text-xs text-slate-400">Plantas de tratamiento, reservorios y lagunas de evaporación o
+              decantación.</p>
           </div>
         </div>
 
         <!-- 6 -->
-        <div class="p-6 rounded-xl bg-slate-800/90 border border-slate-700 hover:border-brand-purple transition duration-200 flex items-start gap-4">
-          <div class="w-10 h-10 rounded-lg bg-purple-500/20 text-purple-400 flex items-center justify-center flex-shrink-0">
+        <div
+          class="p-6 rounded-xl bg-slate-800/90 border border-slate-700 hover:border-brand-purple transition duration-200 flex items-start gap-4">
+          <div
+            class="w-10 h-10 rounded-lg bg-purple-500/20 text-purple-400 flex items-center justify-center flex-shrink-0">
             <i data-lucide="factory" class="w-5 h-5"></i>
           </div>
           <div>
             <h3 class="font-heading text-base font-bold text-white mb-1">Infraestructura minera e industrial</h3>
-            <p class="text-xs text-slate-400">Pilas de lixiviación, canchas de relave, botaderos y contención de soluciones.</p>
+            <p class="text-xs text-slate-400">Pilas de lixiviación, canchas de relave, botaderos y contención de
+              soluciones.</p>
           </div>
         </div>
 
         <!-- 7 -->
-        <div class="p-6 rounded-xl bg-slate-800/90 border border-slate-700 hover:border-brand-purple transition duration-200 flex items-start gap-4 sm:col-span-2 lg:col-span-3">
+        <div
+          class="p-6 rounded-xl bg-slate-800/90 border border-slate-700 hover:border-brand-purple transition duration-200 flex items-start gap-4 sm:col-span-2 lg:col-span-3">
           <div class="w-10 h-10 rounded-lg bg-rose-500/20 text-rose-400 flex items-center justify-center flex-shrink-0">
             <i data-lucide="shield" class="w-5 h-5"></i>
           </div>
           <div>
             <h3 class="font-heading text-base font-bold text-white mb-1">Obras de protección y contención</h3>
-            <p class="text-xs text-slate-400">Protección ambiental de suelos, confinamiento de residuos y contención secundaria de derrames.</p>
+            <p class="text-xs text-slate-400">Protección ambiental de suelos, confinamiento de residuos y contención
+              secundaria de derrames.</p>
           </div>
         </div>
 
@@ -618,10 +706,12 @@
       <!-- Cierre Técnico de Especialidad -->
       <div class="p-8 rounded-2xl bg-slate-800/80 border border-slate-700 max-w-4xl mx-auto text-center space-y-4">
         <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
-          La correcta instalación y unión de estos sistemas constituye un aspecto crítico para su desempeño. Por ello, nuestros procesos se sustentan en experiencia técnica, procedimientos de trabajo y control de ejecución.
+          La correcta instalación y unión de estos sistemas constituye un aspecto crítico para su desempeño. Por ello,
+          nuestros procesos se sustentan en experiencia técnica, procedimientos de trabajo y control de ejecución.
         </p>
         <div class="pt-2">
-          <span class="inline-block px-5 py-2 rounded-full bg-purple-900/50 border border-purple-500/50 text-purple-200 text-sm font-bold">
+          <span
+            class="inline-block px-5 py-2 rounded-full bg-purple-900/50 border border-purple-500/50 text-purple-200 text-sm font-bold">
             La geomembrana no es un servicio más dentro de INGGEO. Es nuestra especialidad.
           </span>
         </div>
@@ -637,7 +727,8 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
       <div class="text-center max-w-3xl mx-auto mb-16">
-        <div class="inline-block text-xs font-bold uppercase tracking-widest text-brand-purple bg-purple-100 px-3 py-1 rounded-md mb-3">
+        <div
+          class="inline-block text-xs font-bold uppercase tracking-widest text-brand-purple bg-purple-100 px-3 py-1 rounded-md mb-3">
           Capacidades Integradas
         </div>
         <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
@@ -651,11 +742,13 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
         <!-- SOLUCIONES DE INGENIERÍA -->
-        <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition duration-200 flex flex-col">
+        <div
+          class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition duration-200 flex flex-col">
           <div class="h-56 overflow-hidden relative">
             <img src="assets/images/ingenieria.jpg" alt="Ingeniería aplicada a la construcción"
               class="w-full h-full object-cover hover:scale-105 transition duration-500" />
-            <div class="absolute top-4 left-4 bg-brand-purple text-white text-xs font-bold uppercase px-3 py-1 rounded shadow">
+            <div
+              class="absolute top-4 left-4 bg-brand-purple text-white text-xs font-bold uppercase px-3 py-1 rounded shadow">
               Soluciones de Ingeniería
             </div>
           </div>
@@ -665,18 +758,25 @@
                 Ingeniería aplicada a la construcción
               </h3>
               <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
-                Nuestra experiencia de terreno nos permite complementar la especialización técnica con una visión integral de los proyectos. Desarrollamos soluciones de ingeniería aplicada a la construcción, orientadas a determinar metodologías de ejecución, planificación de recursos, coordinación técnica y resolución de requerimientos asociados al desarrollo de las obras. Esta capacidad permite integrar las diferentes especialidades involucradas y aportar soluciones constructivas adaptadas a las condiciones particulares de cada proyecto.
+                Nuestra experiencia de terreno nos permite complementar la especialización técnica con una visión
+                integral de los proyectos. Desarrollamos soluciones de ingeniería aplicada a la construcción, orientadas
+                a determinar metodologías de ejecución, planificación de recursos, coordinación técnica y resolución de
+                requerimientos asociados al desarrollo de las obras. Esta capacidad permite integrar las diferentes
+                especialidades involucradas y aportar soluciones constructivas adaptadas a las condiciones particulares
+                de cada proyecto.
               </p>
             </div>
           </div>
         </div>
 
         <!-- OBRAS HIDRÁULICAS -->
-        <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition duration-200 flex flex-col">
+        <div
+          class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition duration-200 flex flex-col">
           <div class="h-56 overflow-hidden relative">
             <img src="assets/images/hidraulica.jpg" alt="Obras Hidráulicas"
               class="w-full h-full object-cover hover:scale-105 transition duration-500" />
-            <div class="absolute top-4 left-4 bg-cyan-700 text-white text-xs font-bold uppercase px-3 py-1 rounded shadow">
+            <div
+              class="absolute top-4 left-4 bg-cyan-700 text-white text-xs font-bold uppercase px-3 py-1 rounded shadow">
               Obras Hidráulicas
             </div>
           </div>
@@ -686,18 +786,23 @@
                 Obras Hidráulicas
               </h3>
               <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
-                Integramos nuestra experiencia en impermeabilización con capacidades para participar en proyectos asociados al almacenamiento, conducción, manejo y contención de agua y otros fluidos. La combinación entre geomembranas, ingeniería y ejecución de obras complementarias nos permite participar en proyectos como tranques, piscinas, embalses, canales y otras infraestructuras hidráulicas.
+                Integramos nuestra experiencia en impermeabilización con capacidades para participar en proyectos
+                asociados al almacenamiento, conducción, manejo y contención de agua y otros fluidos. La combinación
+                entre geomembranas, ingeniería y ejecución de obras complementarias nos permite participar en proyectos
+                como tranques, piscinas, embalses, canales y otras infraestructuras hidráulicas.
               </p>
             </div>
           </div>
         </div>
 
         <!-- OBRAS CIVILES -->
-        <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition duration-200 flex flex-col">
+        <div
+          class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition duration-200 flex flex-col">
           <div class="h-56 overflow-hidden relative">
             <img src="assets/images/civiles.jpg" alt="Obras Civiles"
               class="w-full h-full object-cover hover:scale-105 transition duration-500" />
-            <div class="absolute top-4 left-4 bg-slate-800 text-white text-xs font-bold uppercase px-3 py-1 rounded shadow">
+            <div
+              class="absolute top-4 left-4 bg-slate-800 text-white text-xs font-bold uppercase px-3 py-1 rounded shadow">
               Obras Civiles
             </div>
           </div>
@@ -707,18 +812,23 @@
                 Obras Civiles
               </h3>
               <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
-                Ejecutamos obras civiles complementarias a proyectos de infraestructura y construcción, conforme a planos, especificaciones técnicas y requerimientos establecidos por nuestros clientes. Nuestra capacidad en esta área permite complementar nuestra especialidad y participar en proyectos que requieren una solución constructiva más amplia.
+                Ejecutamos obras civiles complementarias a proyectos de infraestructura y construcción, conforme a
+                planos, especificaciones técnicas y requerimientos establecidos por nuestros clientes. Nuestra capacidad
+                en esta área permite complementar nuestra especialidad y participar en proyectos que requieren una
+                solución constructiva más amplia.
               </p>
             </div>
           </div>
         </div>
 
         <!-- MOVIMIENTO DE TIERRAS -->
-        <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition duration-200 flex flex-col">
+        <div
+          class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition duration-200 flex flex-col">
           <div class="h-56 overflow-hidden relative">
             <img src="assets/images/movimiento_tierras.jpg" alt="Movimiento de Tierras"
               class="w-full h-full object-cover hover:scale-105 transition duration-500" />
-            <div class="absolute top-4 left-4 bg-amber-600 text-white text-xs font-bold uppercase px-3 py-1 rounded shadow">
+            <div
+              class="absolute top-4 left-4 bg-amber-600 text-white text-xs font-bold uppercase px-3 py-1 rounded shadow">
               Movimiento de Tierras
             </div>
           </div>
@@ -728,7 +838,12 @@
                 Movimiento de Tierras
               </h3>
               <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
-                Como parte de nuestras capacidades complementarias, ejecutamos trabajos de movimiento de tierras necesarios para la preparación y conformación de las obras. Estos trabajos pueden comprender excavaciones, rellenos, nivelación, conformación de plataformas, terraplenes, perfilado y compactación, según las características y especificaciones de cada proyecto. El movimiento de tierras se integra a nuestra propuesta como una capacidad que permite preparar adecuadamente la infraestructura sobre la cual posteriormente se desarrollarán las distintas especialidades del proyecto.
+                Como parte de nuestras capacidades complementarias, ejecutamos trabajos de movimiento de tierras
+                necesarios para la preparación y conformación de las obras. Estos trabajos pueden comprender
+                excavaciones, rellenos, nivelación, conformación de plataformas, terraplenes, perfilado y compactación,
+                según las características y especificaciones de cada proyecto. El movimiento de tierras se integra a
+                nuestra propuesta como una capacidad que permite preparar adecuadamente la infraestructura sobre la cual
+                posteriormente se desarrollarán las distintas especialidades del proyecto.
               </p>
             </div>
           </div>
@@ -746,14 +861,17 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
       <div class="text-center max-w-3xl mx-auto mb-16">
-        <div class="inline-block text-xs font-bold uppercase tracking-widest text-purple-300 bg-brand-purple/20 border border-brand-purple/40 px-3 py-1 rounded-md mb-3">
+        <div
+          class="inline-block text-xs font-bold uppercase tracking-widest text-purple-300 bg-brand-purple/20 border border-brand-purple/40 px-3 py-1 rounded-md mb-3">
           Nuestra Filosofía de Trabajo
         </div>
         <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
           La experiencia técnica debe traducirse en resultados.
         </h2>
         <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
-          En INGGEO entendemos que cada proyecto presenta condiciones y desafíos particulares. Por ello, nuestra forma de trabajar comienza por comprender el requerimiento, evaluar sus condiciones de ejecución, planificar los recursos y establecer una metodología de trabajo adecuada antes de llevar la solución a terreno.
+          En INGGEO entendemos que cada proyecto presenta condiciones y desafíos particulares. Por ello, nuestra forma
+          de trabajar comienza por comprender el requerimiento, evaluar sus condiciones de ejecución, planificar los
+          recursos y establecer una metodología de trabajo adecuada antes de llevar la solución a terreno.
         </p>
       </div>
 
@@ -761,7 +879,8 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 
         <!-- PLANIFICAR -->
-        <div class="p-6 rounded-2xl bg-slate-800/90 border border-slate-700 hover:border-brand-purple transition duration-200">
+        <div
+          class="p-6 rounded-2xl bg-slate-800/90 border border-slate-700 hover:border-brand-purple transition duration-200">
           <div class="flex items-center gap-2 mb-3">
             <i data-lucide="clipboard-list" class="w-5 h-5 text-purple-400"></i>
             <h3 class="font-heading text-lg font-bold text-white tracking-wide">PLANIFICAR</h3>
@@ -772,7 +891,8 @@
         </div>
 
         <!-- PREVENIR -->
-        <div class="p-6 rounded-2xl bg-slate-800/90 border border-slate-700 hover:border-cyan-500 transition duration-200">
+        <div
+          class="p-6 rounded-2xl bg-slate-800/90 border border-slate-700 hover:border-cyan-500 transition duration-200">
           <div class="flex items-center gap-2 mb-3">
             <i data-lucide="shield-alert" class="w-5 h-5 text-cyan-400"></i>
             <h3 class="font-heading text-lg font-bold text-white tracking-wide">PREVENIR</h3>
@@ -783,7 +903,8 @@
         </div>
 
         <!-- EJECUTAR -->
-        <div class="p-6 rounded-2xl bg-slate-800/90 border border-slate-700 hover:border-amber-500 transition duration-200">
+        <div
+          class="p-6 rounded-2xl bg-slate-800/90 border border-slate-700 hover:border-amber-500 transition duration-200">
           <div class="flex items-center gap-2 mb-3">
             <i data-lucide="wrench" class="w-5 h-5 text-amber-400"></i>
             <h3 class="font-heading text-lg font-bold text-white tracking-wide">EJECUTAR</h3>
@@ -794,7 +915,8 @@
         </div>
 
         <!-- CONTROLAR -->
-        <div class="p-6 rounded-2xl bg-slate-800/90 border border-slate-700 hover:border-emerald-500 transition duration-200">
+        <div
+          class="p-6 rounded-2xl bg-slate-800/90 border border-slate-700 hover:border-emerald-500 transition duration-200">
           <div class="flex items-center gap-2 mb-3">
             <i data-lucide="check-check" class="w-5 h-5 text-emerald-400"></i>
             <h3 class="font-heading text-lg font-bold text-white tracking-wide">CONTROLAR</h3>
@@ -816,7 +938,8 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
       <div class="text-center max-w-3xl mx-auto mb-14">
-        <div class="inline-block text-xs font-bold uppercase tracking-widest text-brand-purple bg-purple-100 px-3 py-1 rounded-md mb-3">
+        <div
+          class="inline-block text-xs font-bold uppercase tracking-widest text-brand-purple bg-purple-100 px-3 py-1 rounded-md mb-3">
           Nuestros Valores
         </div>
         <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
@@ -830,79 +953,93 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
         <!-- Seguridad -->
-        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-brand-purple transition duration-200">
+        <div
+          class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-brand-purple transition duration-200">
           <div class="w-10 h-10 rounded-lg bg-purple-100 text-brand-purple flex items-center justify-center mb-4">
             <i data-lucide="shield" class="w-5 h-5"></i>
           </div>
           <h3 class="font-heading text-lg font-bold text-slate-900 mb-2">Seguridad</h3>
           <p class="text-slate-700 text-sm leading-relaxed">
-            La seguridad de las personas es una condición esencial de nuestra operación. Promovemos una cultura preventiva y una ejecución responsable en cada actividad que desarrollamos.
+            La seguridad de las personas es una condición esencial de nuestra operación. Promovemos una cultura
+            preventiva y una ejecución responsable en cada actividad que desarrollamos.
           </p>
         </div>
 
         <!-- Calidad -->
-        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-brand-purple transition duration-200">
+        <div
+          class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-brand-purple transition duration-200">
           <div class="w-10 h-10 rounded-lg bg-purple-100 text-brand-purple flex items-center justify-center mb-4">
             <i data-lucide="check-circle-2" class="w-5 h-5"></i>
           </div>
           <h3 class="font-heading text-lg font-bold text-slate-900 mb-2">Calidad</h3>
           <p class="text-slate-700 text-sm leading-relaxed">
-            Entendemos la calidad como parte integral de nuestra forma de trabajar. Ejecutamos nuestros servicios bajo criterios técnicos, procedimientos y controles orientados a obtener resultados confiables.
+            Entendemos la calidad como parte integral de nuestra forma de trabajar. Ejecutamos nuestros servicios bajo
+            criterios técnicos, procedimientos y controles orientados a obtener resultados confiables.
           </p>
         </div>
 
         <!-- Especialización -->
-        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-brand-purple transition duration-200">
+        <div
+          class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-brand-purple transition duration-200">
           <div class="w-10 h-10 rounded-lg bg-purple-100 text-brand-purple flex items-center justify-center mb-4">
             <i data-lucide="zap" class="w-5 h-5"></i>
           </div>
           <h3 class="font-heading text-lg font-bold text-slate-900 mb-2">Especialización</h3>
           <p class="text-slate-700 text-sm leading-relaxed">
-            Valoramos el conocimiento técnico como un elemento diferenciador. Fortalecemos permanentemente las competencias y experiencia de nuestros equipos.
+            Valoramos el conocimiento técnico como un elemento diferenciador. Fortalecemos permanentemente las
+            competencias y experiencia de nuestros equipos.
           </p>
         </div>
 
         <!-- Compromiso -->
-        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-brand-purple transition duration-200">
+        <div
+          class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-brand-purple transition duration-200">
           <div class="w-10 h-10 rounded-lg bg-purple-100 text-brand-purple flex items-center justify-center mb-4">
             <i data-lucide="handshake" class="w-5 h-5"></i>
           </div>
           <h3 class="font-heading text-lg font-bold text-slate-900 mb-2">Compromiso</h3>
           <p class="text-slate-700 text-sm leading-relaxed">
-            Asumimos cada proyecto con responsabilidad, trabajando para cumplir los requerimientos técnicos, plazos y compromisos adquiridos.
+            Asumimos cada proyecto con responsabilidad, trabajando para cumplir los requerimientos técnicos, plazos y
+            compromisos adquiridos.
           </p>
         </div>
 
         <!-- Integridad -->
-        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-brand-purple transition duration-200">
+        <div
+          class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-brand-purple transition duration-200">
           <div class="w-10 h-10 rounded-lg bg-purple-100 text-brand-purple flex items-center justify-center mb-4">
             <i data-lucide="user-check" class="w-5 h-5"></i>
           </div>
           <h3 class="font-heading text-lg font-bold text-slate-900 mb-2">Integridad</h3>
           <p class="text-slate-700 text-sm leading-relaxed">
-            Desarrollamos nuestras relaciones comerciales y laborales sobre principios de responsabilidad, transparencia y respeto.
+            Desarrollamos nuestras relaciones comerciales y laborales sobre principios de responsabilidad, transparencia
+            y respeto.
           </p>
         </div>
 
         <!-- Eficiencia -->
-        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-brand-purple transition duration-200">
+        <div
+          class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-brand-purple transition duration-200">
           <div class="w-10 h-10 rounded-lg bg-purple-100 text-brand-purple flex items-center justify-center mb-4">
             <i data-lucide="trending-up" class="w-5 h-5"></i>
           </div>
           <h3 class="font-heading text-lg font-bold text-slate-900 mb-2">Eficiencia</h3>
           <p class="text-slate-700 text-sm leading-relaxed">
-            Planificamos nuestros trabajos buscando utilizar responsablemente los recursos y optimizar los procesos de ejecución sin comprometer la seguridad ni la calidad.
+            Planificamos nuestros trabajos buscando utilizar responsablemente los recursos y optimizar los procesos de
+            ejecución sin comprometer la seguridad ni la calidad.
           </p>
         </div>
 
         <!-- Sostenibilidad -->
-        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-brand-purple transition duration-200 md:col-span-2 lg:col-span-3">
+        <div
+          class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-brand-purple transition duration-200 md:col-span-2 lg:col-span-3">
           <div class="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center mb-4">
             <i data-lucide="leaf" class="w-5 h-5"></i>
           </div>
           <h3 class="font-heading text-lg font-bold text-slate-900 mb-2">Sostenibilidad</h3>
           <p class="text-slate-700 text-sm leading-relaxed max-w-3xl">
-            Promovemos una gestión responsable de nuestras operaciones, considerando la prevención de impactos y el uso eficiente de los recursos.
+            Promovemos una gestión responsable de nuestras operaciones, considerando la prevención de impactos y el uso
+            eficiente de los recursos.
           </p>
         </div>
 
@@ -921,7 +1058,8 @@
 
         <!-- NUESTRO EQUIPO -->
         <div class="bg-white p-8 sm:p-10 rounded-2xl border border-slate-200 shadow-sm">
-          <div class="inline-block text-xs font-bold uppercase tracking-widest text-brand-purple bg-purple-100 px-3 py-1 rounded-md mb-3">
+          <div
+            class="inline-block text-xs font-bold uppercase tracking-widest text-brand-purple bg-purple-100 px-3 py-1 rounded-md mb-3">
             Nuestro Equipo
           </div>
           <h2 class="font-heading text-2xl font-extrabold text-slate-900 tracking-tight mb-4">
@@ -929,17 +1067,23 @@
           </h2>
           <div class="space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed">
             <p>
-              El principal activo de INGGEO es la experiencia de las personas que conforman nuestra organización. Contamos con profesionales, supervisores y personal técnico con trayectoria en proyectos de construcción, minería, obras civiles y sistemas de impermeabilización.
+              El principal activo de INGGEO es la experiencia de las personas que conforman nuestra organización.
+              Contamos con profesionales, supervisores y personal técnico con trayectoria en proyectos de construcción,
+              minería, obras civiles y sistemas de impermeabilización.
             </p>
             <p>
-              Nuestra estructura combina conocimiento profesional con experiencia práctica de terreno, permitiéndonos enfrentar los desafíos propios de cada proyecto con una visión técnica y operacional. La experiencia acumulada de nuestro equipo constituye uno de los pilares sobre los cuales construimos la confianza de nuestros clientes.
+              Nuestra estructura combina conocimiento profesional con experiencia práctica de terreno, permitiéndonos
+              enfrentar los desafíos propios de cada proyecto con una visión técnica y operacional. La experiencia
+              acumulada de nuestro equipo constituye uno de los pilares sobre los cuales construimos la confianza de
+              nuestros clientes.
             </p>
           </div>
         </div>
 
         <!-- SEGURIDAD, CALIDAD Y MEDIO AMBIENTE -->
         <div class="bg-white p-8 sm:p-10 rounded-2xl border border-slate-200 shadow-sm">
-          <div class="inline-block text-xs font-bold uppercase tracking-widest text-brand-purple bg-purple-100 px-3 py-1 rounded-md mb-3">
+          <div
+            class="inline-block text-xs font-bold uppercase tracking-widest text-brand-purple bg-purple-100 px-3 py-1 rounded-md mb-3">
             Seguridad, Calidad y Medio Ambiente
           </div>
           <h2 class="font-heading text-2xl font-extrabold text-slate-900 tracking-tight mb-4">
@@ -947,10 +1091,14 @@
           </h2>
           <div class="space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed">
             <p>
-              La seguridad, calidad y protección del medio ambiente forman parte de nuestra gestión y se encuentran presentes durante todo el ciclo de ejecución de nuestros proyectos. Promovemos la identificación preventiva de riesgos, el cumplimiento de procedimientos de trabajo, el control de calidad de las actividades ejecutadas y una gestión responsable de los recursos.
+              La seguridad, calidad y protección del medio ambiente forman parte de nuestra gestión y se encuentran
+              presentes durante todo el ciclo de ejecución de nuestros proyectos. Promovemos la identificación
+              preventiva de riesgos, el cumplimiento de procedimientos de trabajo, el control de calidad de las
+              actividades ejecutadas y una gestión responsable de los recursos.
             </p>
             <p>
-              Nuestro objetivo es desarrollar cada proyecto bajo estándares que permitan proteger a las personas, asegurar la calidad de los trabajos y actuar responsablemente con el entorno.
+              Nuestro objetivo es desarrollar cada proyecto bajo estándares que permitan proteger a las personas,
+              asegurar la calidad de los trabajos y actuar responsablemente con el entorno.
             </p>
           </div>
         </div>
@@ -961,7 +1109,8 @@
 
         <!-- EXPERIENCIA Y TRAYECTORIA -->
         <div class="bg-white p-8 sm:p-10 rounded-2xl border border-slate-200 shadow-sm">
-          <div class="inline-block text-xs font-bold uppercase tracking-widest text-brand-purple bg-purple-100 px-3 py-1 rounded-md mb-3">
+          <div
+            class="inline-block text-xs font-bold uppercase tracking-widest text-brand-purple bg-purple-100 px-3 py-1 rounded-md mb-3">
             Experiencia y Trayectoria
           </div>
           <h2 class="font-heading text-2xl font-extrabold text-slate-900 tracking-tight mb-4">
@@ -969,17 +1118,23 @@
           </h2>
           <div class="space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed">
             <p>
-              La experiencia de INGGEO se construye a partir del conocimiento acumulado de su equipo y de la participación en proyectos desarrollados junto a empresas constructoras y organizaciones de distintos sectores.
+              La experiencia de INGGEO se construye a partir del conocimiento acumulado de su equipo y de la
+              participación en proyectos desarrollados junto a empresas constructoras y organizaciones de distintos
+              sectores.
             </p>
             <p>
-              Nuestra trayectoria incluye trabajos vinculados a geomembranas HDPE, impermeabilización, construcción y obras civiles, participando en proyectos desarrollados para empresas y constructoras de reconocida presencia en el mercado. Cada proyecto ejecutado fortalece nuestras capacidades y nos permite continuar construyendo relaciones basadas en confianza, calidad y cumplimiento.
+              Nuestra trayectoria incluye trabajos vinculados a geomembranas HDPE, impermeabilización, construcción y
+              obras civiles, participando en proyectos desarrollados para empresas y constructoras de reconocida
+              presencia en el mercado. Cada proyecto ejecutado fortalece nuestras capacidades y nos permite continuar
+              construyendo relaciones basadas en confianza, calidad y cumplimiento.
             </p>
           </div>
         </div>
 
         <!-- NUESTRO COMPROMISO -->
         <div class="bg-white p-8 sm:p-10 rounded-2xl border border-slate-200 shadow-sm">
-          <div class="inline-block text-xs font-bold uppercase tracking-widest text-brand-purple bg-purple-100 px-3 py-1 rounded-md mb-3">
+          <div
+            class="inline-block text-xs font-bold uppercase tracking-widest text-brand-purple bg-purple-100 px-3 py-1 rounded-md mb-3">
             Nuestro Compromiso
           </div>
           <h2 class="font-heading text-2xl font-extrabold text-slate-900 tracking-tight mb-4">
@@ -987,10 +1142,13 @@
           </h2>
           <div class="space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed">
             <p>
-              Cada proyecto representa para INGGEO una responsabilidad. Nos comprometemos a aportar experiencia, conocimiento técnico y capacidad de ejecución para responder a los requerimientos de nuestros clientes y desarrollar soluciones seguras, eficientes y técnicamente confiables.
+              Cada proyecto representa para INGGEO una responsabilidad. Nos comprometemos a aportar experiencia,
+              conocimiento técnico y capacidad de ejecución para responder a los requerimientos de nuestros clientes y
+              desarrollar soluciones seguras, eficientes y técnicamente confiables.
             </p>
             <p>
-              Buscamos establecer relaciones comerciales de largo plazo, sustentadas en resultados y en la confianza que se construye cumpliendo nuestros compromisos.
+              Buscamos establecer relaciones comerciales de largo plazo, sustentadas en resultados y en la confianza que
+              se construye cumpliendo nuestros compromisos.
             </p>
           </div>
         </div>
@@ -1001,255 +1159,176 @@
   </section>
 
   <!-- =========================================================================
-       FORMULARIO DE CONTACTO & ATENCIÓN
+       FORMULARIO DE CONTACTO & ATENCIÓN (FUSIONADO Y COMPACTO)
        ========================================================================= -->
-  <section id="contacto" class="py-20 bg-slate-950 text-white relative scroll-mt-20">
+  <section id="contacto" class="py-16 sm:py-20 bg-slate-950 text-white relative scroll-mt-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
-
-        <!-- Formulario de Contacto / Cotización -->
-        <div class="lg:col-span-7 bg-slate-900/90 p-8 sm:p-10 rounded-2xl border border-slate-800 shadow-xl">
-          <div class="inline-block text-xs font-bold uppercase tracking-widest text-purple-300 bg-brand-purple/20 border border-brand-purple/40 px-3 py-1 rounded-md mb-2">
-            Cotización Inmediata
-          </div>
-          <h2 class="font-heading text-2xl sm:text-3xl font-extrabold text-white mb-2">
-            Solicite su Presupuesto o Asesoría Técnica
-          </h2>
-          <p class="text-xs sm:text-sm text-slate-400 mb-6">
-            Complete el formulario para recibir una propuesta formal de ingeniería o instalación en terreno.
-          </p>
-
-          <form id="contact-form" class="space-y-4">
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label for="form-nombre" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1">
-                  Nombre Completo *
-                </label>
-                <input type="text" id="form-nombre" required placeholder="Ej. Juan Pérez"
-                  class="w-full bg-slate-950 border border-slate-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-purple" />
-              </div>
-              <div>
-                <label for="form-empresa" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1">
-                  Empresa / Organización
-                </label>
-                <input type="text" id="form-empresa" placeholder="Ej. Minera o Constructora SpA"
-                  class="w-full bg-slate-950 border border-slate-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-purple" />
-              </div>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label for="form-email" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1">
-                  Correo Electrónico *
-                </label>
-                <input type="email" id="form-email" required placeholder="contacto@empresa.cl"
-                  class="w-full bg-slate-950 border border-slate-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-purple" />
-              </div>
-              <div>
-                <label for="form-telefono" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1">
-                  Teléfono / WhatsApp *
-                </label>
-                <input type="tel" id="form-telefono" required placeholder="+56 9 1234 5678"
-                  class="w-full bg-slate-950 border border-slate-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-purple" />
-              </div>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label for="form-servicio" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1">
-                  Especialidad Requerida *
-                </label>
-                <select id="form-servicio"
-                  class="w-full bg-slate-950 border border-slate-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-purple">
-                  <option value="Termofusión y Geomembranas HDPE">Termofusión y Geomembranas HDPE</option>
-                  <option value="Soluciones de Ingeniería Aplicada">Soluciones de Ingeniería Aplicada</option>
-                  <option value="Obras Hidráulicas">Obras Hidráulicas</option>
-                  <option value="Obras Civiles">Obras Civiles</option>
-                  <option value="Movimiento de Tierras">Movimiento de Tierras</option>
-                  <option value="Proyecto Integral">Proyecto Integral (Todas las áreas)</option>
-                </select>
-              </div>
-              <div>
-                <label for="form-faena" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1">
-                  Ubicación / Faena *
-                </label>
-                <input type="text" id="form-faena" required placeholder="Ej. Arica, Iquique, Antofagasta..."
-                  class="w-full bg-slate-950 border border-slate-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-purple" />
-              </div>
-            </div>
-
-            <div>
-              <label for="form-mensaje" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1">
-                Mensaje o Detalle del Requerimiento *
-              </label>
-              <textarea id="form-mensaje" rows="4" required
-                placeholder="Describa requerimientos, m2 aproximados, espesor HDPE, plazos o especificaciones técnicas..."
-                class="w-full bg-slate-950 border border-slate-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-purple"></textarea>
-            </div>
-
-            <button type="submit"
-              class="w-full bg-brand-purple hover:bg-brand-purple-dark text-white py-4 rounded-xl text-sm font-bold uppercase tracking-wider shadow-lg shadow-brand-purple/30 transition flex items-center justify-center gap-2">
-              <i data-lucide="send" class="w-4 h-4"></i>
-              <span>Enviar Solicitud de Cotización</span>
-            </button>
-
-            <!-- Feedback Message -->
-            <div id="form-feedback" class="hidden mt-4"></div>
-
-          </form>
+      <!-- Cabecera de la Sección Unificada -->
+      <div class="max-w-3xl mx-auto text-center mb-8 sm:mb-10">
+        <div
+          class="inline-block text-xs font-bold uppercase tracking-widest text-purple-300 bg-brand-purple/20 border border-brand-purple/40 px-3 py-1 rounded-md mb-3">
+          Contacto y Cotización
         </div>
-
-        <!-- Información de Contacto y Ubicación -->
-        <div class="lg:col-span-5 flex flex-col justify-between space-y-8">
-          <div>
-            <div class="flex items-center gap-3 mb-6">
-              <div class="bg-black/60 p-2 rounded-lg border border-slate-700">
-                <img src="assets/images/logo.jpg" alt="INGGEO MYM SpA" class="h-12 w-auto object-contain rounded" />
-              </div>
-              <div>
-                <span class="block text-base font-bold text-white font-heading">INGGEO MYM SpA</span>
-                <span class="block text-xs text-purple-400 font-medium">Soluciones en Ingeniería y Construcción</span>
-              </div>
-            </div>
-
-            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-8">
-              Expertos en termofusión y geomembranas HDPE. Capacidad técnica y ejecución en terreno para proyectos de minería, construcción e infraestructura en todo el norte del país.
-            </p>
-
-            <div class="space-y-4 text-xs sm:text-sm">
-
-              <!-- Razón Social -->
-              <div class="flex items-start gap-3.5 text-slate-300">
-                <div class="w-8 h-8 rounded-lg bg-purple-950 border border-purple-800/60 text-brand-purple flex items-center justify-center flex-shrink-0">
-                  <i data-lucide="building-2" class="w-4 h-4 text-purple-400"></i>
-                </div>
-                <div>
-                  <strong class="text-white block text-sm">Razón Social</strong>
-                  <span>INGGEO MYM SPA</span>
-                </div>
-              </div>
-
-              <!-- RUT -->
-              <div class="flex items-start gap-3.5 text-slate-300">
-                <div class="w-8 h-8 rounded-lg bg-purple-950 border border-purple-800/60 text-brand-purple flex items-center justify-center flex-shrink-0">
-                  <i data-lucide="file-text" class="w-4 h-4 text-purple-400"></i>
-                </div>
-                <div>
-                  <strong class="text-white block text-sm">RUT</strong>
-                  <span>77298029-9</span>
-                </div>
-              </div>
-
-              <!-- Teléfono -->
-              <div class="flex items-start gap-3.5 text-slate-300">
-                <div class="w-8 h-8 rounded-lg bg-purple-950 border border-purple-800/60 text-brand-purple flex items-center justify-center flex-shrink-0">
-                  <i data-lucide="phone" class="w-4 h-4 text-purple-400"></i>
-                </div>
-                <div>
-                  <strong class="text-white block text-sm">Teléfono</strong>
-                  <a href="tel:+56932390306" class="hover:text-purple-400 transition">+56 9 3239 0306</a>
-                </div>
-              </div>
-
-              <!-- Dirección -->
-              <div class="flex items-start gap-3.5 text-slate-300">
-                <div class="w-8 h-8 rounded-lg bg-purple-950 border border-purple-800/60 text-brand-purple flex items-center justify-center flex-shrink-0">
-                  <i data-lucide="map-pin" class="w-4 h-4 text-purple-400"></i>
-                </div>
-                <div>
-                  <strong class="text-white block text-sm">Dirección</strong>
-                  <span>Pacifico Norte #510, Block E-12, Arica, Chile</span>
-                </div>
-              </div>
-
-              <!-- Email -->
-              <div class="flex items-start gap-3.5 text-slate-300">
-                <div class="w-8 h-8 rounded-lg bg-purple-950 border border-purple-800/60 text-brand-purple flex items-center justify-center flex-shrink-0">
-                  <i data-lucide="mail" class="w-4 h-4 text-purple-400"></i>
-                </div>
-                <div>
-                  <strong class="text-white block text-sm">Email</strong>
-                  <a href="mailto:contacto@inggeo.cl" class="hover:text-purple-400 transition">contacto@inggeo.cl</a>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <!-- Redes y Contacto Rápido -->
-          <div class="pt-6 border-t border-slate-800">
-            <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider block mb-3">
-              Canales Directos
-            </span>
-            <div class="flex items-center gap-3">
-              <a href="https://api.whatsapp.com/send?phone=56932390306" target="_blank"
-                id="footer-wa-btn"
-                class="px-4 py-2.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs flex items-center gap-2 transition cursor-pointer"
-                aria-label="WhatsApp">
-                <i data-lucide="message-circle" class="w-4 h-4"></i>
-                <span>WhatsApp Directo (+56 9 3239 0306)</span>
-              </a>
-            </div>
-          </div>
-
-        </div>
-
+        <h2 class="font-heading text-2xl sm:text-4xl font-extrabold text-white tracking-tight mb-3">
+          Conversemos sobre su Proyecto
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-400">
+          Atención comercial directa y asesoría técnica para proyectos en todo el norte del país.
+        </p>
       </div>
 
-      <!-- Footer Corporativo con Datos de Contacto y Legal -->
-      <div class="mt-16 pt-10 border-t border-slate-800">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10 text-xs sm:text-sm">
-
-          <!-- Razón Social y RUT -->
-          <div>
-            <div class="flex items-center gap-2 text-white font-semibold mb-3">
-              <i data-lucide="building-2" class="w-4 h-4 text-purple-400"></i>
-              <span>Identificación Legal</span>
-            </div>
-            <ul class="space-y-1.5 text-slate-400">
-              <li><strong class="text-slate-300">Razón Social:</strong> INGGEO MYM SPA</li>
-              <li><strong class="text-slate-300">RUT:</strong> 77298029-9</li>
-            </ul>
+      <!-- Barra de Contacto Rápido Directo (Accesos inmediatos sin scroll) -->
+      <div class="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 mb-8">
+        <!-- WhatsApp Directo -->
+        <a href="https://api.whatsapp.com/send?phone=56932390306" target="_blank" id="footer-wa-btn"
+          class="flex items-center gap-3.5 p-3.5 sm:p-4 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-emerald-500/60 hover:bg-slate-850 transition-all duration-200 group cursor-pointer shadow-md">
+          <div
+            class="w-10 h-10 rounded-lg bg-emerald-950/70 border border-emerald-700/50 flex items-center justify-center text-emerald-400 flex-shrink-0 group-hover:scale-105 transition">
+            <i data-lucide="message-circle" class="w-5 h-5"></i>
           </div>
-
-          <!-- Contacto Directo -->
-          <div>
-            <div class="flex items-center gap-2 text-white font-semibold mb-3">
-              <i data-lucide="phone" class="w-4 h-4 text-purple-400"></i>
-              <span>Contacto Directo</span>
-            </div>
-            <ul class="space-y-1.5 text-slate-400">
-              <li class="flex items-center gap-2">
-                <i data-lucide="phone" class="w-3.5 h-3.5 text-purple-400"></i>
-                <a href="tel:+56932390306" class="hover:text-purple-400 transition">+56 9 3239 0306</a>
-              </li>
-              <li class="flex items-center gap-2">
-                <i data-lucide="mail" class="w-3.5 h-3.5 text-purple-400"></i>
-                <a href="mailto:contacto@inggeo.cl" class="hover:text-purple-400 transition">contacto@inggeo.cl</a>
-              </li>
-            </ul>
+          <div class="overflow-hidden text-left">
+            <span class="text-[10px] sm:text-xs text-slate-400 uppercase font-bold tracking-wider block">WhatsApp Directo</span>
+            <span class="text-slate-100 font-semibold text-xs sm:text-sm group-hover:text-emerald-300 transition">+56 9 3239 0306</span>
           </div>
+        </a>
 
-          <!-- Ubicación / Dirección -->
-          <div class="lg:col-span-2">
-            <div class="flex items-center gap-2 text-white font-semibold mb-3">
-              <i data-lucide="map-pin" class="w-4 h-4 text-purple-400"></i>
-              <span>Dirección & Casa Matriz</span>
-            </div>
-            <p class="text-slate-400 flex items-start gap-2">
-              <i data-lucide="map-pin" class="w-3.5 h-3.5 text-purple-400 flex-shrink-0 mt-0.5"></i>
-              <span>Pacifico Norte #510, Block E-12, Arica, Chile</span>
-            </p>
+        <!-- Correo Electrónico -->
+        <a href="mailto:contacto@inggeo.cl"
+          class="flex items-center gap-3.5 p-3.5 sm:p-4 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-purple-500/60 hover:bg-slate-850 transition-all duration-200 group shadow-md">
+          <div
+            class="w-10 h-10 rounded-lg bg-purple-950/70 border border-purple-800/50 flex items-center justify-center text-purple-400 flex-shrink-0 group-hover:scale-105 transition">
+            <i data-lucide="mail" class="w-5 h-5"></i>
           </div>
+          <div class="overflow-hidden text-left">
+            <span class="text-[10px] sm:text-xs text-slate-400 uppercase font-bold tracking-wider block">Correo Oficial</span>
+            <span class="text-slate-100 font-semibold text-xs sm:text-sm group-hover:text-purple-300 transition">contacto@inggeo.cl</span>
+          </div>
+        </a>
 
+        <!-- Ubicación / Casa Matriz -->
+        <div class="flex items-center gap-3.5 p-3.5 sm:p-4 rounded-xl bg-slate-900/90 border border-slate-800 shadow-md">
+          <div
+            class="w-10 h-10 rounded-lg bg-slate-800 border border-slate-700 flex items-center justify-center text-purple-400 flex-shrink-0">
+            <i data-lucide="map-pin" class="w-5 h-5"></i>
+          </div>
+          <div class="overflow-hidden text-left">
+            <span class="text-[10px] sm:text-xs text-slate-400 uppercase font-bold tracking-wider block">Casa Matriz</span>
+            <span class="text-slate-100 font-semibold text-xs sm:text-sm truncate block" title="Pacifico Norte #510, Block E-12, Arica, Chile">Arica, Chile</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Formulario de Contacto / Cotización Integrado -->
+      <div class="max-w-4xl mx-auto bg-slate-900/90 p-6 sm:p-10 rounded-2xl border border-slate-800 shadow-xl">
+        <div class="mb-6">
+          <div
+            class="inline-block text-xs font-bold uppercase tracking-widest text-purple-300 bg-brand-purple/20 border border-brand-purple/40 px-3 py-1 rounded-md mb-2">
+            Cotización Inmediata
+          </div>
+          <h3 class="font-heading text-xl sm:text-2xl font-bold text-white mb-1">
+            Formulario de Requerimiento Técnico
+          </h3>
+          <p class="text-xs sm:text-sm text-slate-400">
+            Complete los antecedentes para recibir una propuesta formal de ingeniería o instalación en terreno.
+          </p>
         </div>
 
-        <!-- Barra de Copyright -->
-        <div class="pt-6 border-t border-slate-800/80 text-center sm:flex sm:justify-between sm:text-left text-xs text-slate-500">
-          <p>© 2026 INGGEO MYM SPA. RUT: 77298029-9. Todos los derechos reservados.</p>
-          <p class="mt-2 sm:mt-0">Especialización técnica · Ingeniería aplicada · Ejecución en terreno</p>
+        <form id="contact-form" class="space-y-4">
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="form-nombre"
+                class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1">
+                Nombre Completo *
+              </label>
+              <input type="text" id="form-nombre" required placeholder="Ej. Juan Pérez"
+                class="w-full bg-slate-950 border border-slate-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-purple" />
+            </div>
+            <div>
+              <label for="form-empresa"
+                class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1">
+                Empresa / Organización
+              </label>
+              <input type="text" id="form-empresa" placeholder="Ej. Minera o Constructora SpA"
+                class="w-full bg-slate-950 border border-slate-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-purple" />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="form-email"
+                class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1">
+                Correo Electrónico *
+              </label>
+              <input type="email" id="form-email" required placeholder="contacto@empresa.cl"
+                class="w-full bg-slate-950 border border-slate-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-purple" />
+            </div>
+            <div>
+              <label for="form-telefono"
+                class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1">
+                Teléfono / WhatsApp *
+              </label>
+              <input type="tel" id="form-telefono" required placeholder="+56 9 1234 5678"
+                class="w-full bg-slate-950 border border-slate-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-purple" />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="form-servicio"
+                class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1">
+                Especialidad Requerida *
+              </label>
+              <select id="form-servicio"
+                class="w-full bg-slate-950 border border-slate-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-purple">
+                <option value="Termofusión y Geomembranas HDPE">Termofusión y Geomembranas HDPE</option>
+                <option value="Soluciones de Ingeniería Aplicada">Soluciones de Ingeniería Aplicada</option>
+                <option value="Obras Hidráulicas">Obras Hidráulicas</option>
+                <option value="Obras Civiles">Obras Civiles</option>
+                <option value="Movimiento de Tierras">Movimiento de Tierras</option>
+                <option value="Proyecto Integral">Proyecto Integral (Todas las áreas)</option>
+              </select>
+            </div>
+            <div>
+              <label for="form-faena"
+                class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1">
+                Ubicación / Faena *
+              </label>
+              <input type="text" id="form-faena" required placeholder="Ej. Arica, Iquique, Antofagasta..."
+                class="w-full bg-slate-950 border border-slate-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-purple" />
+            </div>
+          </div>
+
+          <div>
+            <label for="form-mensaje"
+              class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1">
+              Mensaje o Detalle del Requerimiento *
+            </label>
+            <textarea id="form-mensaje" rows="4" required
+              placeholder="Describa requerimientos, m2 aproximados, espesor HDPE, plazos o especificaciones técnicas..."
+              class="w-full bg-slate-950 border border-slate-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-purple"></textarea>
+          </div>
+
+          <button type="submit"
+            class="w-full bg-brand-purple hover:bg-brand-purple-dark text-white py-4 rounded-xl text-sm font-bold uppercase tracking-wider shadow-lg shadow-brand-purple/30 transition flex items-center justify-center gap-2 cursor-pointer">
+            <i data-lucide="send" class="w-4 h-4"></i>
+            <span>Enviar Solicitud de Cotización</span>
+          </button>
+
+          <!-- Feedback Message -->
+          <div id="form-feedback" class="hidden mt-4"></div>
+
+        </form>
+      </div>
+
+      <!-- Footer Corporativo Minimalista Integrado (Sin duplicidad) -->
+      <div class="mt-12 pt-6 border-t border-slate-800/80 max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500 text-center sm:text-left">
+        <div>
+          <strong class="text-slate-400">INGGEO MYM SPA</strong> · RUT: 77298029-9 · Pacifico Norte #510, Block E-12, Arica
+        </div>
+        <div>
+          <p>© 2026 Todos los derechos reservados · Especialistas en HDPE & Ingeniería</p>
         </div>
       </div>
 
@@ -1264,23 +1343,27 @@
     <!-- Tarjeta / Ventana de Chat (Oculta por defecto) -->
     <div id="wa-chat-window"
       class="hidden pointer-events-auto mb-3 w-[calc(100vw-2rem)] sm:w-96 rounded-2xl shadow-2xl border border-slate-700/80 bg-slate-900 text-white overflow-hidden transition-all duration-300 transform origin-bottom-right scale-95 opacity-0">
-      
+
       <!-- Cabecera estilo WhatsApp / INGGEO -->
-      <div class="bg-gradient-to-r from-emerald-700 via-emerald-600 to-teal-700 p-4 flex items-center justify-between text-white shadow-md">
+      <div
+        class="bg-gradient-to-r from-emerald-700 via-emerald-600 to-teal-700 p-4 flex items-center justify-between text-white shadow-md">
         <div class="flex items-center gap-3">
           <div class="relative">
-            <div class="w-10 h-10 rounded-full bg-slate-900 p-1 border border-emerald-400/50 flex items-center justify-center overflow-hidden">
+            <div
+              class="w-10 h-10 rounded-full bg-slate-900 p-1 border border-emerald-400/50 flex items-center justify-center overflow-hidden">
               <img src="assets/images/logo.jpg" alt="INGGEO MYM SpA" class="w-full h-full object-contain"
                 onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');" />
               <span class="hidden font-bold text-xs text-white">IG</span>
             </div>
             <!-- Punto indicador de conexión "En línea" -->
-            <span class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-emerald-400 border-2 border-slate-900"></span>
+            <span
+              class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-emerald-400 border-2 border-slate-900"></span>
           </div>
           <div>
             <div class="flex items-center gap-1.5">
               <h4 class="font-bold text-sm tracking-wide text-white leading-tight">INGGEO MYM SpA</h4>
-              <span class="text-[10px] bg-emerald-900/60 border border-emerald-400/40 text-emerald-200 px-1.5 py-0.5 rounded-full font-semibold">Oficial</span>
+              <span
+                class="text-[10px] bg-emerald-900/60 border border-emerald-400/40 text-emerald-200 px-1.5 py-0.5 rounded-full font-semibold">Oficial</span>
             </div>
             <p class="text-[11px] text-emerald-100/90 flex items-center gap-1 mt-0.5">
               <span class="w-1.5 h-1.5 rounded-full bg-emerald-300 animate-pulse"></span>
@@ -1290,7 +1373,9 @@
         </div>
 
         <!-- Botón para cerrar ventana de chat -->
-        <button id="wa-widget-close" class="p-1.5 rounded-lg text-emerald-100 hover:text-white hover:bg-emerald-800/60 transition" aria-label="Cerrar chat">
+        <button id="wa-widget-close"
+          class="p-1.5 rounded-lg text-emerald-100 hover:text-white hover:bg-emerald-800/60 transition"
+          aria-label="Cerrar chat">
           <i data-lucide="x" class="w-5 h-5"></i>
         </button>
       </div>
@@ -1299,14 +1384,16 @@
       <div class="p-4 bg-slate-950/95 space-y-3 max-h-80 overflow-y-auto border-b border-slate-800">
         <!-- Indicador de fecha -->
         <div class="text-center">
-          <span class="text-[10px] font-medium bg-slate-800/80 text-slate-400 px-2.5 py-1 rounded-full uppercase tracking-wider">
+          <span
+            class="text-[10px] font-medium bg-slate-800/80 text-slate-400 px-2.5 py-1 rounded-full uppercase tracking-wider">
             Hoy
           </span>
         </div>
 
         <!-- Burbuja de mensaje de bienvenida entrante -->
         <div class="flex items-start gap-2 max-w-[88%]">
-          <div class="bg-slate-800 text-slate-200 text-xs p-3.5 rounded-2xl rounded-tl-none border border-slate-700/60 shadow-md space-y-1.5 leading-relaxed">
+          <div
+            class="bg-slate-800 text-slate-200 text-xs p-3.5 rounded-2xl rounded-tl-none border border-slate-700/60 shadow-md space-y-1.5 leading-relaxed">
             <p class="font-medium text-white">
               ¡Hola! 👋 Bienvenido al canal de atención de <strong>INGGEO MYM SpA</strong>.
             </p>
@@ -1326,17 +1413,20 @@
             Consultas Frecuentes:
           </span>
           <div class="flex flex-col gap-1.5">
-            <button class="wa-quick-chip text-left text-xs bg-slate-900 hover:bg-slate-800 hover:text-emerald-400 text-slate-300 px-3 py-2 rounded-xl border border-slate-800 hover:border-emerald-500/40 transition flex items-center justify-between"
+            <button
+              class="wa-quick-chip text-left text-xs bg-slate-900 hover:bg-slate-800 hover:text-emerald-400 text-slate-300 px-3 py-2 rounded-xl border border-slate-800 hover:border-emerald-500/40 transition flex items-center justify-between"
               data-msg="Hola, requiero cotizar un servicio de termofusión y geomembranas HDPE.">
               <span>📋 Cotizar Termofusión HDPE</span>
               <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-slate-500"></i>
             </button>
-            <button class="wa-quick-chip text-left text-xs bg-slate-900 hover:bg-slate-800 hover:text-emerald-400 text-slate-300 px-3 py-2 rounded-xl border border-slate-800 hover:border-emerald-500/40 transition flex items-center justify-between"
+            <button
+              class="wa-quick-chip text-left text-xs bg-slate-900 hover:bg-slate-800 hover:text-emerald-400 text-slate-300 px-3 py-2 rounded-xl border border-slate-800 hover:border-emerald-500/40 transition flex items-center justify-between"
               data-msg="Hola, necesito asesoría técnica para un proyecto de obras civiles / hidráulicas.">
               <span>🏗️ Asesoría en Obras Civiles</span>
               <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-slate-500"></i>
             </button>
-            <button class="wa-quick-chip text-left text-xs bg-slate-900 hover:bg-slate-800 hover:text-emerald-400 text-slate-300 px-3 py-2 rounded-xl border border-slate-800 hover:border-emerald-500/40 transition flex items-center justify-between"
+            <button
+              class="wa-quick-chip text-left text-xs bg-slate-900 hover:bg-slate-800 hover:text-emerald-400 text-slate-300 px-3 py-2 rounded-xl border border-slate-800 hover:border-emerald-500/40 transition flex items-center justify-between"
               data-msg="Hola, me gustaría comunicarme directamente con un ingeniero de INGGEO.">
               <span>👷 Hablar con un Ingeniero</span>
               <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-slate-500"></i>
@@ -1348,14 +1438,13 @@
       <!-- Pie de entrada de mensaje y botón de envío -->
       <div class="p-3 bg-slate-900 border-t border-slate-800">
         <div class="flex items-center gap-2">
-          <input type="text" id="wa-widget-input"
-            placeholder="Escribe tu consulta aquí..."
+          <input type="text" id="wa-widget-input" placeholder="Escribe tu consulta aquí..."
             class="flex-1 bg-slate-950 border border-slate-700/80 focus:border-emerald-500 rounded-xl px-3.5 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none transition" />
           <button id="wa-widget-send"
             class="bg-emerald-500 hover:bg-emerald-600 text-slate-950 p-2.5 rounded-xl font-bold transition flex items-center justify-center shadow-md hover:scale-105"
             aria-label="Enviar por WhatsApp">
             <svg class="w-4 h-4 text-slate-950 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+              <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
             </svg>
           </button>
         </div>
@@ -1369,7 +1458,7 @@
 
     <!-- Botón Flotante de Activación (Lanzador) -->
     <div class="flex items-center gap-3 pointer-events-auto">
-      
+
       <!-- Tooltip / Globo de invitación (desaparece al abrir) -->
       <div id="wa-widget-tooltip"
         class="hidden sm:flex items-center gap-2 bg-slate-900/95 border border-slate-700/80 text-white text-xs font-semibold px-3.5 py-2 rounded-xl shadow-xl backdrop-blur-sm cursor-pointer hover:border-emerald-500/60 transition">
@@ -1381,15 +1470,18 @@
       <button id="wa-widget-toggle"
         class="relative w-14 h-14 rounded-full bg-[#25D366] hover:bg-[#20ba59] text-white flex items-center justify-center shadow-2xl shadow-emerald-950/60 hover:scale-110 active:scale-95 transition-all duration-300 focus:outline-none group"
         aria-label="Abrir WhatsApp Chat Widget">
-        
+
         <!-- Indicador de notificación (Badge "1") -->
-        <span class="absolute -top-1 -right-1 w-5 h-5 bg-red-500 text-white text-[10px] font-black rounded-full flex items-center justify-center shadow border-2 border-slate-950">
+        <span
+          class="absolute -top-1 -right-1 w-5 h-5 bg-red-500 text-white text-[10px] font-black rounded-full flex items-center justify-center shadow border-2 border-slate-950">
           1
         </span>
 
         <!-- Icono Oficial WhatsApp -->
-        <svg class="w-8 h-8 text-white fill-current group-hover:rotate-6 transition-transform" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c4.54 0 8.24 3.7 8.24 8.24 0 2.2-.86 4.27-2.42 5.82a8.188 8.188 0 0 1-5.82 2.42c-1.44 0-2.85-.38-4.1-1.1l-.29-.17-3.12.82.83-3.04-.19-.3a8.17 8.17 0 0 1-1.25-4.45c0-4.54 3.7-8.24 8.25-8.24zm4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.01-1.24-.74-.66-1.24-1.48-1.39-1.73-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.17-.48-.29z"/>
+        <svg class="w-8 h-8 text-white fill-current group-hover:rotate-6 transition-transform" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c4.54 0 8.24 3.7 8.24 8.24 0 2.2-.86 4.27-2.42 5.82a8.188 8.188 0 0 1-5.82 2.42c-1.44 0-2.85-.38-4.1-1.1l-.29-.17-3.12.82.83-3.04-.19-.3a8.17 8.17 0 0 1-1.25-4.45c0-4.54 3.7-8.24 8.25-8.24zm4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.01-1.24-.74-.66-1.24-1.48-1.39-1.73-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.17-.48-.29z" />
         </svg>
       </button>
 
