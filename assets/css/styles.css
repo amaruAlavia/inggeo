@@ -15,6 +15,18 @@
   --color-border-glow: rgba(144, 92, 251, 0.4);
 }
 
+/* Base Typography: Justified Paragraphs */
+p {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+}
+
+.text-center p,
+p.text-center {
+  text-align: center;
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 9px;

@@ -45,5 +45,5 @@ Este proyecto es un sitio estático listo para ser desplegado en plataformas com
 
 - **Ubicación:** Pacifico Norte #510, Block E-12, Arica
 - **Teléfono / WhatsApp:** +56 9 3239 0306
-- **Email:** contacto@inggeo.cl
+- **Emails Oficiales:** inggeo.arica@gmail.com | contacto@inggeo.cl
 - **Web:** [inggeo.cl](https://inggeo.cl)
