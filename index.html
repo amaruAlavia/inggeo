@@ -386,42 +386,73 @@
   <section id="nosotros" class="scroll-mt-20 py-20 bg-white border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-      <div class="max-w-4xl mx-auto bg-slate-50/80 p-8 sm:p-12 rounded-2xl border border-slate-200 shadow-sm">
-        <div
-          class="inline-block text-xs font-bold uppercase tracking-widest text-brand-purple bg-purple-100 px-3 py-1 rounded-md mb-3">
-          Quiénes Somos
-        </div>
-        <h2 class="font-heading text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight mb-6">
-          Ingeniería, especialización y ejecución
-        </h2>
-        <div class="space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed">
-          <p>
-            INGGEO MYM SpA es una empresa de ingeniería y construcción especializada, con base en la región de Arica y
-            Parinacota y
-            experiencia en proyectos asociados a construcción, infraestructura y minería en el norte de Chile.
-          </p>
-          <p>
-            Nuestra principal fortaleza se encuentra en la termofusión, instalación de geomembranas HDPE y ejecución de
-            sistemas de impermeabilización, especialidad respaldada por la experiencia y conocimiento técnico de nuestro
-            equipo.
-          </p>
-          <p>
-            A partir de esta base, hemos desarrollado capacidades complementarias en obras hidráulicas, obras civiles y
-            movimiento de tierras, lo que nos permite comprender las distintas etapas de un proyecto y participar de
-            manera integral en su ejecución.
-          </p>
-          <div class="p-4 sm:p-5 bg-purple-50/80 border-l-4 border-brand-purple rounded-r-xl my-4">
-            <p class="text-sm sm:text-base font-semibold text-slate-900">
-              Nuestra forma de trabajar combina tres capacidades fundamentales: Especialización técnica. Ingeniería
-              aplicada. Ejecución en terreno.
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+        
+        <!-- Columna Izquierda: Texto Institucional -->
+        <div class="lg:col-span-7 bg-slate-50/80 p-8 sm:p-10 rounded-2xl border border-slate-200 shadow-sm">
+          <div
+            class="inline-block text-xs font-bold uppercase tracking-widest text-brand-purple bg-purple-100 px-3 py-1 rounded-md mb-3">
+            Quiénes Somos
+          </div>
+          <h2 class="font-heading text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight mb-6">
+            Ingeniería, especialización y ejecución
+          </h2>
+          <div class="space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed">
+            <p>
+              INGGEO MYM SpA es una empresa de ingeniería y construcción especializada, con base en la región de Arica y
+              Parinacota y experiencia en proyectos asociados a construcción, infraestructura y minería en el norte de Chile.
+            </p>
+            <p>
+              Nuestra principal fortaleza se encuentra en la termofusión, instalación de geomembranas HDPE y ejecución de
+              sistemas de impermeabilización, especialidad respaldada por la experiencia y conocimiento técnico de nuestro
+              equipo.
+            </p>
+            <p>
+              A partir de esta base, hemos desarrollado capacidades complementarias en obras hidráulicas, obras civiles y
+              movimiento de tierras, lo que nos permite comprender las distintas etapas de un proyecto y participar de
+              manera integral en su ejecución.
+            </p>
+            <div class="p-4 sm:p-5 bg-purple-50/80 border-l-4 border-brand-purple rounded-r-xl my-4">
+              <p class="text-sm sm:text-base font-semibold text-slate-900">
+                Nuestra forma de trabajar combina tres capacidades fundamentales: Especialización técnica. Ingeniería
+                aplicada. Ejecución en terreno.
+              </p>
+            </div>
+            <p>
+              Esta integración nos permite responder a los desafíos de cada obra con soluciones técnicamente confiables,
+              seguras y eficientes, orientadas al cumplimiento de las especificaciones, estándares de calidad y
+              compromisos establecidos con nuestros clientes.
             </p>
           </div>
-          <p>
-            Esta integración nos permite responder a los desafíos de cada obra con soluciones técnicamente confiables,
-            seguras y eficientes, orientadas al cumplimiento de las especificaciones, estándares de calidad y
-            compromisos establecidos con nuestros clientes.
-          </p>
         </div>
+
+        <!-- Columna Derecha: Fotografía Oficial en Terreno (1.jpeg) -->
+        <div class="lg:col-span-5 flex flex-col gap-3">
+          <div class="relative rounded-2xl overflow-hidden shadow-xl border border-slate-200 bg-slate-900 group">
+            <img src="assets/images/1.jpeg" alt="Personal técnico de INGGEO MYM SpA en faena de terreno"
+              class="w-full h-80 sm:h-96 lg:h-[480px] object-cover group-hover:scale-105 transition-transform duration-700" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/20 to-transparent"></div>
+            
+            <!-- Badge superior flotante -->
+            <div class="absolute top-4 left-4">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-purple-950/90 text-purple-200 border border-purple-500/50 text-xs font-bold uppercase tracking-wider backdrop-blur-md shadow-md">
+                <i data-lucide="shield-check" class="w-3.5 h-3.5 text-purple-400"></i>
+                Equipo Oficial INGGEO
+              </span>
+            </div>
+
+            <!-- Pie de foto informativo -->
+            <div class="absolute bottom-4 left-4 right-4 text-white">
+              <p class="text-xs sm:text-sm font-semibold text-slate-100 leading-snug">
+                Ejecución técnica en terreno
+              </p>
+              <p class="text-[11px] text-slate-300 mt-0.5">
+                Personal calificado con inducción, estándares de seguridad y experiencia práctica en obra.
+              </p>
+            </div>
+          </div>
+        </div>
+
       </div>
 
     </div>
@@ -628,6 +659,47 @@
         </p>
       </div>
 
+      <!-- Showcase Fotográfico Especialidad HDPE (b.jpeg y a.jpeg) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+        <!-- Foto b.jpeg: Suministro y Desenrollado -->
+        <div class="relative rounded-2xl overflow-hidden border border-slate-700 bg-slate-800 shadow-xl group">
+          <div class="h-64 sm:h-72 overflow-hidden">
+            <img src="assets/images/b.jpeg" alt="Desenrollado y bobinas de geomembrana HDPE"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent"></div>
+          </div>
+          <div class="absolute top-4 left-4">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-purple-950/90 text-purple-200 border border-purple-500/40 text-xs font-bold uppercase tracking-wider backdrop-blur-md shadow-md">
+              <i data-lucide="layers" class="w-3.5 h-3.5 text-purple-400"></i>
+              Suministro e Instalación
+            </span>
+          </div>
+          <div class="absolute bottom-4 left-4 right-4 text-white">
+            <h4 class="font-heading font-bold text-sm sm:text-base text-white">Bobinas HDPE y Equipamiento de Termofusión</h4>
+            <p class="text-[11px] sm:text-xs text-slate-300 mt-0.5">Disposición controlada de rollos en obra y herramientas técnicas para termosoldadura de precisión.</p>
+          </div>
+        </div>
+
+        <!-- Foto a.jpeg: Plataforma Extendida e Inspección -->
+        <div class="relative rounded-2xl overflow-hidden border border-slate-700 bg-slate-800 shadow-xl group">
+          <div class="h-64 sm:h-72 overflow-hidden">
+            <img src="assets/images/a.jpeg" alt="Plataforma impermeabilizada con geomembrana HDPE y técnicos inspeccionando costuras"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent"></div>
+          </div>
+          <div class="absolute top-4 left-4">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-950/90 text-emerald-200 border border-emerald-500/40 text-xs font-bold uppercase tracking-wider backdrop-blur-md shadow-md">
+              <i data-lucide="check-circle" class="w-3.5 h-3.5 text-emerald-400"></i>
+              Control de Calidad
+            </span>
+          </div>
+          <div class="absolute bottom-4 left-4 right-4 text-white">
+            <h4 class="font-heading font-bold text-sm sm:text-base text-white">Plataformas Impermeables & Termosoldadura</h4>
+            <p class="text-[11px] sm:text-xs text-slate-300 mt-0.5">Control visual y ensayos en costuras para garantizar estanqueidad total en toda la superficie revestida.</p>
+          </div>
+        </div>
+      </div>
+
       <!-- 7 Aplicaciones Literales -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
 
@@ -763,114 +835,434 @@
         </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Consola / Dashboard Interactivo de Especialidades (Sin dependencia de fotos) -->
+      <div class="bg-slate-950 rounded-3xl border border-slate-800 shadow-2xl p-5 sm:p-8 lg:p-10 text-white relative overflow-hidden">
+        
+        <!-- Patrón sutil de fondo tecnológico -->
+        <div class="absolute inset-0 bg-grid-pattern opacity-15 pointer-events-none"></div>
 
-        <!-- SOLUCIONES DE INGENIERÍA -->
-        <div
-          class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition duration-200 flex flex-col">
-          <div class="h-56 overflow-hidden relative">
-            <img src="assets/images/ingenieria.jpg" alt="Ingeniería aplicada a la construcción"
-              class="w-full h-full object-cover hover:scale-105 transition duration-500" />
-            <div
-              class="absolute top-4 left-4 bg-brand-purple text-white text-xs font-bold uppercase px-3 py-1 rounded shadow">
-              Soluciones de Ingeniería
+        <!-- Pestañas Superiores / Selector de Disciplinas -->
+        <div class="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-8 pb-6 border-b border-slate-800/80">
+          
+          <!-- Tab 1: Ingeniería Aplicada (Activo por defecto) -->
+          <button type="button"
+            class="service-tab-btn bg-purple-600 text-white shadow-lg shadow-purple-600/30 border-purple-500 p-3.5 sm:p-4 rounded-2xl border text-left transition-all duration-200 flex items-center gap-3 sm:gap-3.5 group cursor-pointer"
+            data-target="service-panel-ingenieria">
+            <div class="w-10 h-10 rounded-xl bg-purple-950/80 border border-purple-400/40 flex items-center justify-center text-purple-300 flex-shrink-0 group-hover:scale-105 transition">
+              <i data-lucide="cpu" class="w-5 h-5"></i>
             </div>
-          </div>
-          <div class="p-6 sm:p-8 flex-1 flex flex-col justify-between">
-            <div>
-              <h3 class="font-heading text-xl font-bold text-slate-900 mb-3">
-                Ingeniería aplicada a la construcción
-              </h3>
-              <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
-                Nuestra experiencia de terreno nos permite complementar la especialización técnica con una visión
-                integral de los proyectos. Desarrollamos soluciones de ingeniería aplicada a la construcción, orientadas
-                a determinar metodologías de ejecución, planificación de recursos, coordinación técnica y resolución de
-                requerimientos asociados al desarrollo de las obras. Esta capacidad permite integrar las diferentes
-                especialidades involucradas y aportar soluciones constructivas adaptadas a las condiciones particulares
-                de cada proyecto.
-              </p>
+            <div class="min-w-0">
+              <span class="block text-xs sm:text-sm font-bold truncate">Ingeniería Aplicada</span>
+              <span class="block text-[10px] sm:text-xs text-purple-200/80 truncate">Metodología y Control</span>
             </div>
-          </div>
+          </button>
+
+          <!-- Tab 2: Obras Hidráulicas -->
+          <button type="button"
+            class="service-tab-btn bg-slate-900/80 text-slate-300 border-slate-800 p-3.5 sm:p-4 rounded-2xl border text-left transition-all duration-200 flex items-center gap-3 sm:gap-3.5 group hover:border-cyan-500/50 hover:bg-slate-900 cursor-pointer"
+            data-target="service-panel-hidraulica">
+            <div class="w-10 h-10 rounded-xl bg-cyan-950/80 border border-cyan-500/30 flex items-center justify-center text-cyan-400 flex-shrink-0 group-hover:scale-105 transition">
+              <i data-lucide="droplets" class="w-5 h-5"></i>
+            </div>
+            <div class="min-w-0">
+              <span class="block text-xs sm:text-sm font-bold truncate">Obras Hidráulicas</span>
+              <span class="block text-[10px] sm:text-xs text-slate-400 truncate">Fluidos y Contención</span>
+            </div>
+          </button>
+
+          <!-- Tab 3: Obras Civiles -->
+          <button type="button"
+            class="service-tab-btn bg-slate-900/80 text-slate-300 border-slate-800 p-3.5 sm:p-4 rounded-2xl border text-left transition-all duration-200 flex items-center gap-3 sm:gap-3.5 group hover:border-slate-600 hover:bg-slate-900 cursor-pointer"
+            data-target="service-panel-civiles">
+            <div class="w-10 h-10 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-slate-300 flex-shrink-0 group-hover:scale-105 transition">
+              <i data-lucide="building-2" class="w-5 h-5"></i>
+            </div>
+            <div class="min-w-0">
+              <span class="block text-xs sm:text-sm font-bold truncate">Obras Civiles</span>
+              <span class="block text-[10px] sm:text-xs text-slate-400 truncate">Estructuras de Soporte</span>
+            </div>
+          </button>
+
+          <!-- Tab 4: Movimiento de Tierras -->
+          <button type="button"
+            class="service-tab-btn bg-slate-900/80 text-slate-300 border-slate-800 p-3.5 sm:p-4 rounded-2xl border text-left transition-all duration-200 flex items-center gap-3 sm:gap-3.5 group hover:border-amber-500/50 hover:bg-slate-900 cursor-pointer"
+            data-target="service-panel-tierras">
+            <div class="w-10 h-10 rounded-xl bg-amber-950/80 border border-amber-500/30 flex items-center justify-center text-amber-400 flex-shrink-0 group-hover:scale-105 transition">
+              <i data-lucide="truck" class="w-5 h-5"></i>
+            </div>
+            <div class="min-w-0">
+              <span class="block text-xs sm:text-sm font-bold truncate">Movimiento de Tierras</span>
+              <span class="block text-[10px] sm:text-xs text-slate-400 truncate">Plataformas y Relieves</span>
+            </div>
+          </button>
+
         </div>
 
-        <!-- OBRAS HIDRÁULICAS -->
-        <div
-          class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition duration-200 flex flex-col">
-          <div class="h-56 overflow-hidden relative">
-            <img src="assets/images/hidraulica.jpg" alt="Obras Hidráulicas"
-              class="w-full h-full object-cover hover:scale-105 transition duration-500" />
-            <div
-              class="absolute top-4 left-4 bg-cyan-700 text-white text-xs font-bold uppercase px-3 py-1 rounded shadow">
-              Obras Hidráulicas
-            </div>
-          </div>
-          <div class="p-6 sm:p-8 flex-1 flex flex-col justify-between">
-            <div>
-              <h3 class="font-heading text-xl font-bold text-slate-900 mb-3">
-                Obras Hidráulicas
-              </h3>
-              <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
-                Integramos nuestra experiencia en impermeabilización con capacidades para participar en proyectos
-                asociados al almacenamiento, conducción, manejo y contención de agua y otros fluidos. La combinación
-                entre geomembranas, ingeniería y ejecución de obras complementarias nos permite participar en proyectos
-                como tranques, piscinas, embalses, canales y otras infraestructuras hidráulicas.
-              </p>
-            </div>
-          </div>
-        </div>
+        <!-- Paneles de Contenido Detallado -->
+        <div id="service-panels-container" class="relative z-10">
 
-        <!-- OBRAS CIVILES -->
-        <div
-          class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition duration-200 flex flex-col">
-          <div class="h-56 overflow-hidden relative">
-            <img src="assets/images/civiles.jpg" alt="Obras Civiles"
-              class="w-full h-full object-cover hover:scale-105 transition duration-500" />
-            <div
-              class="absolute top-4 left-4 bg-slate-800 text-white text-xs font-bold uppercase px-3 py-1 rounded shadow">
-              Obras Civiles
-            </div>
-          </div>
-          <div class="p-6 sm:p-8 flex-1 flex flex-col justify-between">
-            <div>
-              <h3 class="font-heading text-xl font-bold text-slate-900 mb-3">
-                Obras Civiles
-              </h3>
-              <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
-                Ejecutamos obras civiles complementarias a proyectos de infraestructura y construcción, conforme a
-                planos, especificaciones técnicas y requerimientos establecidos por nuestros clientes. Nuestra capacidad
-                en esta área permite complementar nuestra especialidad y participar en proyectos que requieren una
-                solución constructiva más amplia.
-              </p>
-            </div>
-          </div>
-        </div>
+          <!-- PANEL 1: INGENIERÍA APLICADA -->
+          <div id="service-panel-ingenieria" class="service-tab-panel animate-fadeIn">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-start">
+              
+              <!-- Columna Principal -->
+              <div class="lg:col-span-7 space-y-4 sm:space-y-5">
+                <div class="flex items-center gap-2">
+                  <span class="w-2.5 h-2.5 rounded-full bg-purple-400"></span>
+                  <span class="text-xs font-bold uppercase tracking-widest text-purple-300">Disciplina 01 · Ingeniería en Faena</span>
+                </div>
+                
+                <h3 class="font-heading text-2xl sm:text-3xl font-extrabold text-white leading-tight">
+                  Ingeniería aplicada a la construcción
+                </h3>
+                
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                  Nuestra experiencia de terreno nos permite complementar la especialización técnica con una visión integral de los proyectos. Desarrollamos soluciones de ingeniería aplicada a la construcción, orientadas a determinar metodologías de ejecución, planificación de recursos, coordinación técnica y resolución de requerimientos asociados al desarrollo de las obras. Esta capacidad permite integrar las diferentes especialidades involucradas y aportar soluciones constructivas adaptadas a las condiciones particulares de cada proyecto.
+                </p>
 
-        <!-- MOVIMIENTO DE TIERRAS -->
-        <div
-          class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition duration-200 flex flex-col">
-          <div class="h-56 overflow-hidden relative">
-            <img src="assets/images/movimiento_tierras.jpg" alt="Movimiento de Tierras"
-              class="w-full h-full object-cover hover:scale-105 transition duration-500" />
-            <div
-              class="absolute top-4 left-4 bg-amber-600 text-white text-xs font-bold uppercase px-3 py-1 rounded shadow">
-              Movimiento de Tierras
+                <!-- Cita Técnica Destacada -->
+                <div class="p-4 rounded-xl bg-slate-900/90 border-l-4 border-purple-500 border border-slate-800 text-xs sm:text-sm text-slate-200 flex items-start gap-3">
+                  <i data-lucide="sparkles" class="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5"></i>
+                  <span>
+                    <strong>Articulación Estratégica:</strong> Unimos la ingeniería de proyecto con la realidad operativa en terreno, anticipando interferencias y optimizando rendimientos constructivos.
+                  </span>
+                </div>
+
+                <div class="pt-2">
+                  <a href="#contacto" data-service="Soluciones de Ingeniería Aplicada"
+                    class="service-quote-btn inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-brand-purple hover:bg-brand-purple-dark text-white text-xs sm:text-sm font-bold uppercase tracking-wider transition shadow-lg shadow-purple-950/50">
+                    <i data-lucide="calculator" class="w-4 h-4"></i>
+                    <span>Cotizar Ingeniería Aplicada</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Columna Secundaria (Alcances y Capacidades) -->
+              <div class="lg:col-span-5 space-y-4 bg-slate-900/80 p-5 sm:p-6 rounded-2xl border border-slate-800">
+                
+                <!-- Cabezal Técnico Metodología (Ingeniería Aplicada) -->
+                <div class="rounded-xl overflow-hidden border border-purple-800/50 bg-gradient-to-br from-purple-950/60 to-slate-900 p-4 shadow-md relative flex items-center gap-3.5">
+                  <div class="w-12 h-12 rounded-xl bg-purple-900/80 border border-purple-400/40 flex items-center justify-center text-purple-300 flex-shrink-0 shadow-lg shadow-purple-950/60">
+                    <i data-lucide="compass" class="w-6 h-6"></i>
+                  </div>
+                  <div>
+                    <span class="text-xs font-bold text-white block uppercase tracking-wider mb-0.5">Gabinete & Terreno</span>
+                    <p class="text-[11px] text-slate-300 leading-snug">
+                      Planificación, supervisión técnica, protocolos de aseguramiento de calidad y trazabilidad de obra.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-center justify-between pb-3 border-b border-slate-800">
+                  <span class="text-xs font-bold uppercase tracking-wider text-slate-300 flex items-center gap-2">
+                    <i data-lucide="check-square" class="w-4 h-4 text-purple-400"></i>
+                    Alcances y Capacidades
+                  </span>
+                  <span class="text-[10px] bg-purple-950 text-purple-300 px-2 py-0.5 rounded-full font-semibold border border-purple-800/60">Técnico</span>
+                </div>
+
+                <ul class="space-y-3 text-xs sm:text-sm text-slate-300">
+                  <li class="flex items-start gap-2.5">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-purple-400 flex-shrink-0 mt-0.5"></i>
+                    <span>Planificación técnica de obras y secuencia constructiva</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-purple-400 flex-shrink-0 mt-0.5"></i>
+                    <span>Definición y validación de procedimientos de trabajo en faena</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-purple-400 flex-shrink-0 mt-0.5"></i>
+                    <span>Coordinación técnica interdisciplinaria en obra</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-purple-400 flex-shrink-0 mt-0.5"></i>
+                    <span>Optimización de recursos operacionales y control de plazos</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-purple-400 flex-shrink-0 mt-0.5"></i>
+                    <span>Aseguramiento de estándares de calidad y especificaciones técnicas</span>
+                  </li>
+                </ul>
+
+                <div class="pt-3 border-t border-slate-800 flex items-center justify-between text-[11px] text-slate-400">
+                  <span>Aplicable a:</span>
+                  <strong class="text-slate-200">Minería · Infraestructura · Industria</strong>
+                </div>
+              </div>
+
             </div>
           </div>
-          <div class="p-6 sm:p-8 flex-1 flex flex-col justify-between">
-            <div>
-              <h3 class="font-heading text-xl font-bold text-slate-900 mb-3">
-                Movimiento de Tierras
-              </h3>
-              <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
-                Como parte de nuestras capacidades complementarias, ejecutamos trabajos de movimiento de tierras
-                necesarios para la preparación y conformación de las obras. Estos trabajos pueden comprender
-                excavaciones, rellenos, nivelación, conformación de plataformas, terraplenes, perfilado y compactación,
-                según las características y especificaciones de cada proyecto. El movimiento de tierras se integra a
-                nuestra propuesta como una capacidad que permite preparar adecuadamente la infraestructura sobre la cual
-                posteriormente se desarrollarán las distintas especialidades del proyecto.
-              </p>
+
+          <!-- PANEL 2: OBRAS HIDRÁULICAS -->
+          <div id="service-panel-hidraulica" class="service-tab-panel hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-start">
+              
+              <!-- Columna Principal -->
+              <div class="lg:col-span-7 space-y-4 sm:space-y-5">
+                <div class="flex items-center gap-2">
+                  <span class="w-2.5 h-2.5 rounded-full bg-cyan-400"></span>
+                  <span class="text-xs font-bold uppercase tracking-widest text-cyan-300">Disciplina 02 · Conducción y Contención</span>
+                </div>
+                
+                <h3 class="font-heading text-2xl sm:text-3xl font-extrabold text-white leading-tight">
+                  Obras Hidráulicas
+                </h3>
+                
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                  Integramos nuestra experiencia en impermeabilización con capacidades para participar en proyectos asociados al almacenamiento, conducción, manejo y contención de agua y otros fluidos. La combinación entre geomembranas, ingeniería y ejecución de obras complementarias nos permite participar en proyectos como tranques, piscinas, embalses, canales y otras infraestructuras hidráulicas.
+                </p>
+
+                <!-- Cita Técnica Destacada -->
+                <div class="p-4 rounded-xl bg-slate-900/90 border-l-4 border-cyan-500 border border-slate-800 text-xs sm:text-sm text-slate-200 flex items-start gap-3">
+                  <i data-lucide="shield-check" class="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5"></i>
+                  <span>
+                    <strong>Seguridad Hídrica:</strong> Aseguramos la continuidad operacional y estanqueidad total en infraestructura de almacenamiento y transporte de recursos hídricos.
+                  </span>
+                </div>
+
+                <div class="pt-2">
+                  <a href="#contacto" data-service="Obras Hidráulicas"
+                    class="service-quote-btn inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-cyan-600 hover:bg-cyan-700 text-white text-xs sm:text-sm font-bold uppercase tracking-wider transition shadow-lg shadow-cyan-950/50">
+                    <i data-lucide="calculator" class="w-4 h-4"></i>
+                    <span>Cotizar Obras Hidráulicas</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Columna Secundaria (Alcances y Capacidades) -->
+              <div class="lg:col-span-5 space-y-4 bg-slate-900/80 p-5 sm:p-6 rounded-2xl border border-slate-800">
+                
+                <!-- Fotografía Real Tranque Hidráulico (c.jpg) -->
+                <div class="rounded-xl overflow-hidden border border-slate-700 shadow-md relative group h-44 sm:h-48">
+                  <img src="assets/images/c.jpg" alt="Tranque de acumulación de agua en el desierto revestido con geomembrana HDPE"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent"></div>
+                  <div class="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-[11px] text-cyan-200 font-semibold">
+                    <span class="flex items-center gap-1.5"><i data-lucide="droplets" class="w-3.5 h-3.5 text-cyan-400"></i> Tranque en operación</span>
+                    <span class="bg-cyan-950/80 px-2 py-0.5 rounded border border-cyan-500/40 text-[10px]">100% Estanqueidad</span>
+                  </div>
+                </div>
+
+                <div class="flex items-center justify-between pb-3 border-b border-slate-800">
+                  <span class="text-xs font-bold uppercase tracking-wider text-slate-300 flex items-center gap-2">
+                    <i data-lucide="check-square" class="w-4 h-4 text-cyan-400"></i>
+                    Alcances y Capacidades
+                  </span>
+                  <span class="text-[10px] bg-cyan-950 text-cyan-300 px-2 py-0.5 rounded-full font-semibold border border-cyan-800/60">Técnico</span>
+                </div>
+
+                <ul class="space-y-3 text-xs sm:text-sm text-slate-300">
+                  <li class="flex items-start gap-2.5">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5"></i>
+                    <span>Tranques de acumulación agrícola, minera e industrial</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5"></i>
+                    <span>Piscinas de lixiviación, evaporación y decantación</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5"></i>
+                    <span>Embalses y reservorios de almacenamiento hídrico</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5"></i>
+                    <span>Canalizaciones de conducción y obras de entrega</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5"></i>
+                    <span>Sistemas de contención secundaria y drenajes técnicos</span>
+                  </li>
+                </ul>
+
+                <div class="pt-3 border-t border-slate-800 flex items-center justify-between text-[11px] text-slate-400">
+                  <span>Aplicable a:</span>
+                  <strong class="text-slate-200">Agroindustria · Minería · Servicios Sanitarios</strong>
+                </div>
+              </div>
+
             </div>
           </div>
+
+          <!-- PANEL 3: OBRAS CIVILES -->
+          <div id="service-panel-civiles" class="service-tab-panel hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-start">
+              
+              <!-- Columna Principal -->
+              <div class="lg:col-span-7 space-y-4 sm:space-y-5">
+                <div class="flex items-center gap-2">
+                  <span class="w-2.5 h-2.5 rounded-full bg-slate-400"></span>
+                  <span class="text-xs font-bold uppercase tracking-widest text-slate-300">Disciplina 03 · Infraestructura y Estructuras</span>
+                </div>
+                
+                <h3 class="font-heading text-2xl sm:text-3xl font-extrabold text-white leading-tight">
+                  Obras Civiles
+                </h3>
+                
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                  Ejecutamos obras civiles complementarias a proyectos de infraestructura y construcción, conforme a planos, especificaciones técnicas y requerimientos establecidos por nuestros clientes. Nuestra capacidad en esta área permite complementar nuestra especialidad y participar en proyectos que requieren una solución constructiva más amplia.
+                </p>
+
+                <!-- Cita Técnica Destacada -->
+                <div class="p-4 rounded-xl bg-slate-900/90 border-l-4 border-slate-500 border border-slate-800 text-xs sm:text-sm text-slate-200 flex items-start gap-3">
+                  <i data-lucide="layers" class="w-5 h-5 text-slate-400 flex-shrink-0 mt-0.5"></i>
+                  <span>
+                    <strong>Rigor Constructivo:</strong> Ejecución conforme a planos de ingeniería y normativas técnicas chilenas (NCh), asegurando durabilidad y solidez estructural.
+                  </span>
+                </div>
+
+                <div class="pt-2">
+                  <a href="#contacto" data-service="Obras Civiles"
+                    class="service-quote-btn inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs sm:text-sm font-bold uppercase tracking-wider transition shadow-lg shadow-slate-950/50 border border-slate-700">
+                    <i data-lucide="calculator" class="w-4 h-4"></i>
+                    <span>Cotizar Obras Civiles</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Columna Secundaria (Alcances y Capacidades) -->
+              <div class="lg:col-span-5 space-y-4 bg-slate-900/80 p-5 sm:p-6 rounded-2xl border border-slate-800">
+                
+                <!-- Fotografía Real Obras Civiles e Infraestructura (3.jpeg) -->
+                <div class="rounded-xl overflow-hidden border border-slate-700 shadow-md relative group h-44 sm:h-48">
+                  <img src="assets/images/3.jpeg" alt="Obras civiles, caminos y logística de faena con geomembrana"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent"></div>
+                  <div class="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-[11px] text-slate-200 font-semibold">
+                    <span class="flex items-center gap-1.5"><i data-lucide="building-2" class="w-3.5 h-3.5 text-slate-400"></i> Obras de Infraestructura</span>
+                    <span class="bg-slate-800/80 px-2 py-0.5 rounded border border-slate-600/40 text-[10px]">Faena Civil</span>
+                  </div>
+                </div>
+
+                <div class="flex items-center justify-between pb-3 border-b border-slate-800">
+                  <span class="text-xs font-bold uppercase tracking-wider text-slate-300 flex items-center gap-2">
+                    <i data-lucide="check-square" class="w-4 h-4 text-slate-400"></i>
+                    Alcances y Capacidades
+                  </span>
+                  <span class="text-[10px] bg-slate-800 text-slate-300 px-2 py-0.5 rounded-full font-semibold border border-slate-700">Técnico</span>
+                </div>
+
+                <ul class="space-y-3 text-xs sm:text-sm text-slate-300">
+                  <li class="flex items-start gap-2.5">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-slate-400 flex-shrink-0 mt-0.5"></i>
+                    <span>Fundaciones, losas y radieres de hormigón armado</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-slate-400 flex-shrink-0 mt-0.5"></i>
+                    <span>Muros de contención, brocales y zanjas de anclaje</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-slate-400 flex-shrink-0 mt-0.5"></i>
+                    <span>Obras de arte perimetrales y canaletas de desagüe</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-slate-400 flex-shrink-0 mt-0.5"></i>
+                    <span>Estructuras civiles de soporte y anclajes técnicos</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-slate-400 flex-shrink-0 mt-0.5"></i>
+                    <span>Obras complementarias para proyectos de infraestructura</span>
+                  </li>
+                </ul>
+
+                <div class="pt-3 border-t border-slate-800 flex items-center justify-between text-[11px] text-slate-400">
+                  <span>Aplicable a:</span>
+                  <strong class="text-slate-200">Construcción · Edificación · Industria</strong>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- PANEL 4: MOVIMIENTO DE TIERRAS -->
+          <div id="service-panel-tierras" class="service-tab-panel hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-start">
+              
+              <!-- Columna Principal -->
+              <div class="lg:col-span-7 space-y-4 sm:space-y-5">
+                <div class="flex items-center gap-2">
+                  <span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span>
+                  <span class="text-xs font-bold uppercase tracking-widest text-amber-300">Disciplina 04 · Preparación y Conformación</span>
+                </div>
+                
+                <h3 class="font-heading text-2xl sm:text-3xl font-extrabold text-white leading-tight">
+                  Movimiento de Tierras
+                </h3>
+                
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                  Como parte de nuestras capacidades complementarias, ejecutamos trabajos de movimiento de tierras necesarios para la preparación y conformación de las obras. Estos trabajos pueden comprender excavaciones, rellenos, nivelación, conformación de plataformas, terraplenes, perfilado y compactación, según las características y especificaciones de cada proyecto. El movimiento de tierras se integra a nuestra propuesta como una capacidad que permite preparar adecuadamente la infraestructura sobre la cual posteriormente se desarrollarán las distintas especialidades del proyecto.
+                </p>
+
+                <!-- Cita Técnica Destacada -->
+                <div class="p-4 rounded-xl bg-slate-900/90 border-l-4 border-amber-500 border border-slate-800 text-xs sm:text-sm text-slate-200 flex items-start gap-3">
+                  <i data-lucide="mountain" class="w-5 h-5 text-amber-400 flex-shrink-0 mt-0.5"></i>
+                  <span>
+                    <strong>Base Topográfica:</strong> Acondicionamos perfiles y taludes con tolerancias estrictas, garantizando el soporte óptimo para revestimientos de geomembrana HDPE.
+                  </span>
+                </div>
+
+                <div class="pt-2">
+                  <a href="#contacto" data-service="Movimiento de Tierras"
+                    class="service-quote-btn inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-amber-600 hover:bg-amber-700 text-white text-xs sm:text-sm font-bold uppercase tracking-wider transition shadow-lg shadow-amber-950/50">
+                    <i data-lucide="calculator" class="w-4 h-4"></i>
+                    <span>Cotizar Movimiento de Tierras</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Columna Secundaria (Alcances y Capacidades) -->
+              <div class="lg:col-span-5 space-y-4 bg-slate-900/80 p-5 sm:p-6 rounded-2xl border border-slate-800">
+                
+                <!-- Fotografía Real Movimiento de Tierras y Maquinaria (2.jpeg) -->
+                <div class="rounded-xl overflow-hidden border border-slate-700 shadow-md relative group h-44 sm:h-48">
+                  <img src="assets/images/2.jpeg" alt="Retroexcavadora CAT en faena de movimiento de tierras y taludes con geomembrana"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent"></div>
+                  <div class="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-[11px] text-amber-200 font-semibold">
+                    <span class="flex items-center gap-1.5"><i data-lucide="truck" class="w-3.5 h-3.5 text-amber-400"></i> Maquinaria en terreno</span>
+                    <span class="bg-amber-950/80 px-2 py-0.5 rounded border border-amber-500/40 text-[10px]">Conformación</span>
+                  </div>
+                </div>
+
+                <div class="flex items-center justify-between pb-3 border-b border-slate-800">
+                  <span class="text-xs font-bold uppercase tracking-wider text-slate-300 flex items-center gap-2">
+                    <i data-lucide="check-square" class="w-4 h-4 text-amber-400"></i>
+                    Alcances y Capacidades
+                  </span>
+                  <span class="text-[10px] bg-amber-950 text-amber-300 px-2 py-0.5 rounded-full font-semibold border border-amber-800/60">Técnico</span>
+                </div>
+
+                <ul class="space-y-3 text-xs sm:text-sm text-slate-300">
+                  <li class="flex items-start gap-2.5">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5"></i>
+                    <span>Excavaciones masivas, zanjas de anclaje y zanjas técnicas</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5"></i>
+                    <span>Conformación de plataformas industriales y terraplenes</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5"></i>
+                    <span>Nivelación topográfica, escarpe y preparación de terreno</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5"></i>
+                    <span>Perfilado y afinado de taludes para apoyo de geomembrana</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5"></i>
+                    <span>Control de compactación, densidades y rellenos controlados</span>
+                  </li>
+                </ul>
+
+                <div class="pt-3 border-t border-slate-800 flex items-center justify-between text-[11px] text-slate-400">
+                  <span>Aplicable a:</span>
+                  <strong class="text-slate-200">Faenas Mineras · Proyectos Viales · Obras Civiles</strong>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
         </div>
 
       </div>
@@ -1078,103 +1470,164 @@
   <section id="gestion" class="py-20 bg-slate-50 border-b border-slate-200 scroll-mt-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-
-        <!-- NUESTRO EQUIPO -->
-        <div class="bg-white p-8 sm:p-10 rounded-2xl border border-slate-200 shadow-sm">
-          <div
-            class="inline-block text-xs font-bold uppercase tracking-widest text-brand-purple bg-purple-100 px-3 py-1 rounded-md mb-3">
-            Nuestro Equipo
-          </div>
-          <h2 class="font-heading text-2xl font-extrabold text-slate-900 tracking-tight mb-4">
-            Experiencia que se lleva a terreno
-          </h2>
-          <div class="space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed">
-            <p>
-              El principal activo de INGGEO es la experiencia de las personas que conforman nuestra organización.
-              Contamos con profesionales, supervisores y personal técnico con trayectoria en proyectos de construcción,
-              minería, obras civiles y sistemas de impermeabilización.
-            </p>
-            <p>
-              Nuestra estructura combina conocimiento profesional con experiencia práctica de terreno, permitiéndonos
-              enfrentar los desafíos propios de cada proyecto con una visión técnica y operacional. La experiencia
-              acumulada de nuestro equipo constituye uno de los pilares sobre los cuales construimos la confianza de
-              nuestros clientes.
-            </p>
-          </div>
+      <!-- Encabezado de Sección -->
+      <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-12">
+        <div
+          class="inline-block text-xs font-bold uppercase tracking-widest text-brand-purple bg-purple-100 px-3 py-1 rounded-md mb-3">
+          Gestión Integral
         </div>
-
-        <!-- SEGURIDAD, CALIDAD Y MEDIO AMBIENTE -->
-        <div class="bg-white p-8 sm:p-10 rounded-2xl border border-slate-200 shadow-sm">
-          <div
-            class="inline-block text-xs font-bold uppercase tracking-widest text-brand-purple bg-purple-100 px-3 py-1 rounded-md mb-3">
-            Seguridad, Calidad y Medio Ambiente
-          </div>
-          <h2 class="font-heading text-2xl font-extrabold text-slate-900 tracking-tight mb-4">
-            Compromiso transversal
-          </h2>
-          <div class="space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed">
-            <p>
-              La seguridad, calidad y protección del medio ambiente forman parte de nuestra gestión y se encuentran
-              presentes durante todo el ciclo de ejecución de nuestros proyectos. Promovemos la identificación
-              preventiva de riesgos, el cumplimiento de procedimientos de trabajo, el control de calidad de las
-              actividades ejecutadas y una gestión responsable de los recursos.
-            </p>
-            <p>
-              Nuestro objetivo es desarrollar cada proyecto bajo estándares que permitan proteger a las personas,
-              asegurar la calidad de los trabajos y actuar responsablemente con el entorno.
-            </p>
-          </div>
-        </div>
-
+        <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
+          Equipo, Calidad y Compromiso
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base">
+          Pilares operacionales sobre los cuales sustentamos cada proyecto. Haz clic en cada área para desplegar su información técnica.
+        </p>
       </div>
 
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <!-- Contenedor de 2 Columnas Independientes para Módulos Desplegables -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 sm:gap-6 items-start">
 
-        <!-- EXPERIENCIA Y TRAYECTORIA -->
-        <div class="bg-white p-8 sm:p-10 rounded-2xl border border-slate-200 shadow-sm">
-          <div
-            class="inline-block text-xs font-bold uppercase tracking-widest text-brand-purple bg-purple-100 px-3 py-1 rounded-md mb-3">
-            Experiencia y Trayectoria
-          </div>
-          <h2 class="font-heading text-2xl font-extrabold text-slate-900 tracking-tight mb-4">
-            Experiencia y Trayectoria
-          </h2>
-          <div class="space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed">
-            <p>
-              La experiencia de INGGEO se construye a partir del conocimiento acumulado de su equipo y de la
-              participación en proyectos desarrollados junto a empresas constructoras y organizaciones de distintos
-              sectores.
-            </p>
-            <p>
-              Nuestra trayectoria incluye trabajos vinculados a geomembranas HDPE, impermeabilización, construcción y
-              obras civiles, participando en proyectos desarrollados para empresas y constructoras de reconocida
-              presencia en el mercado. Cada proyecto ejecutado fortalece nuestras capacidades y nos permite continuar
-              construyendo relaciones basadas en confianza, calidad y cumplimiento.
-            </p>
-          </div>
+        <!-- Columna Izquierda -->
+        <div class="space-y-5 sm:space-y-6">
+          <!-- 1. NUESTRO EQUIPO -->
+          <details class="group bg-white rounded-2xl border border-slate-200 shadow-sm hover:border-purple-300 transition-all duration-300 open:shadow-md open:border-purple-400 overflow-hidden" open>
+            <summary class="p-5 sm:p-6 flex items-center justify-between cursor-pointer list-none select-none hover:bg-slate-50/80 transition">
+              <div class="flex items-center gap-3.5 sm:gap-4 pr-2">
+                <div class="w-11 h-11 rounded-xl bg-purple-100 text-brand-purple flex items-center justify-center flex-shrink-0 group-open:bg-brand-purple group-open:text-white transition">
+                  <i data-lucide="users" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <span class="inline-block text-[10px] font-bold uppercase tracking-widest text-brand-purple bg-purple-50 px-2 py-0.5 rounded mb-0.5">
+                    Nuestro Equipo
+                  </span>
+                  <h3 class="font-heading text-base sm:text-lg font-bold text-slate-900 group-hover:text-brand-purple transition leading-tight">
+                    Experiencia que se lleva a terreno
+                  </h3>
+                </div>
+              </div>
+              <div class="w-8 h-8 rounded-full bg-slate-100 group-open:bg-purple-100 text-slate-500 group-open:text-brand-purple flex items-center justify-center transition-transform duration-300 group-open:rotate-180 flex-shrink-0">
+                <i data-lucide="chevron-down" class="w-4 h-4"></i>
+              </div>
+            </summary>
+            <div class="px-6 pb-6 pt-3 border-t border-slate-100 space-y-3 text-slate-700 text-sm sm:text-base leading-relaxed animate-fadeIn">
+              <p>
+                El principal activo de INGGEO es la experiencia de las personas que conforman nuestra organización.
+                Contamos con profesionales, supervisores y personal técnico con trayectoria en proyectos de construcción,
+                minería, obras civiles y sistemas de impermeabilización.
+              </p>
+              <p>
+                Nuestra estructura combina conocimiento profesional con experiencia práctica de terreno, permitiéndonos
+                enfrentar los desafíos propios de cada proyecto con una visión técnica y operacional. La experiencia
+                acumulada de nuestro equipo constituye uno de los pilares sobre los cuales construimos la confianza de
+                nuestros clientes.
+              </p>
+            </div>
+          </details>
+
+          <!-- 2. SEGURIDAD, CALIDAD Y MEDIO AMBIENTE (COMPROMISO TRANSVERSAL) -->
+          <details class="group bg-white rounded-2xl border border-slate-200 shadow-sm hover:border-purple-300 transition-all duration-300 open:shadow-md open:border-purple-400 overflow-hidden">
+            <summary class="p-5 sm:p-6 flex items-center justify-between cursor-pointer list-none select-none hover:bg-slate-50/80 transition">
+              <div class="flex items-center gap-3.5 sm:gap-4 pr-2">
+                <div class="w-11 h-11 rounded-xl bg-purple-100 text-brand-purple flex items-center justify-center flex-shrink-0 group-open:bg-brand-purple group-open:text-white transition">
+                  <i data-lucide="shield-check" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <span class="inline-block text-[10px] font-bold uppercase tracking-widest text-brand-purple bg-purple-50 px-2 py-0.5 rounded mb-0.5">
+                    Seguridad, Calidad y MA
+                  </span>
+                  <h3 class="font-heading text-base sm:text-lg font-bold text-slate-900 group-hover:text-brand-purple transition leading-tight">
+                    Compromiso transversal
+                  </h3>
+                </div>
+              </div>
+              <div class="w-8 h-8 rounded-full bg-slate-100 group-open:bg-purple-100 text-slate-500 group-open:text-brand-purple flex items-center justify-center transition-transform duration-300 group-open:rotate-180 flex-shrink-0">
+                <i data-lucide="chevron-down" class="w-4 h-4"></i>
+              </div>
+            </summary>
+            <div class="px-6 pb-6 pt-3 border-t border-slate-100 space-y-3 text-slate-700 text-sm sm:text-base leading-relaxed animate-fadeIn">
+              <p>
+                La seguridad, calidad y protección del medio ambiente forman parte de nuestra gestión y se encuentran
+                presentes durante todo el ciclo de ejecución de nuestros proyectos. Promovemos la identificación
+                preventiva de riesgos, el cumplimiento de procedimientos de trabajo, el control de calidad de las
+                actividades ejecutadas y una gestión responsable de los recursos.
+              </p>
+              <p>
+                Nuestro objetivo es desarrollar cada proyecto bajo estándares que permitan proteger a las personas,
+                asegurar la calidad de los trabajos y actuar responsablemente con el entorno.
+              </p>
+            </div>
+          </details>
         </div>
 
-        <!-- NUESTRO COMPROMISO -->
-        <div class="bg-white p-8 sm:p-10 rounded-2xl border border-slate-200 shadow-sm">
-          <div
-            class="inline-block text-xs font-bold uppercase tracking-widest text-brand-purple bg-purple-100 px-3 py-1 rounded-md mb-3">
-            Nuestro Compromiso
-          </div>
-          <h2 class="font-heading text-2xl font-extrabold text-slate-900 tracking-tight mb-4">
-            Nuestro Compromiso
-          </h2>
-          <div class="space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed">
-            <p>
-              Cada proyecto representa para INGGEO una responsabilidad. Nos comprometemos a aportar experiencia,
-              conocimiento técnico y capacidad de ejecución para responder a los requerimientos de nuestros clientes y
-              desarrollar soluciones seguras, eficientes y técnicamente confiables.
-            </p>
-            <p>
-              Buscamos establecer relaciones comerciales de largo plazo, sustentadas en resultados y en la confianza que
-              se construye cumpliendo nuestros compromisos.
-            </p>
-          </div>
+        <!-- Columna Derecha -->
+        <div class="space-y-5 sm:space-y-6">
+          <!-- 3. EXPERIENCIA Y TRAYECTORIA -->
+          <details class="group bg-white rounded-2xl border border-slate-200 shadow-sm hover:border-purple-300 transition-all duration-300 open:shadow-md open:border-purple-400 overflow-hidden">
+            <summary class="p-5 sm:p-6 flex items-center justify-between cursor-pointer list-none select-none hover:bg-slate-50/80 transition">
+              <div class="flex items-center gap-3.5 sm:gap-4 pr-2">
+                <div class="w-11 h-11 rounded-xl bg-purple-100 text-brand-purple flex items-center justify-center flex-shrink-0 group-open:bg-brand-purple group-open:text-white transition">
+                  <i data-lucide="award" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <span class="inline-block text-[10px] font-bold uppercase tracking-widest text-brand-purple bg-purple-50 px-2 py-0.5 rounded mb-0.5">
+                    Trayectoria
+                  </span>
+                  <h3 class="font-heading text-base sm:text-lg font-bold text-slate-900 group-hover:text-brand-purple transition leading-tight">
+                    Experiencia y Trayectoria
+                  </h3>
+                </div>
+              </div>
+              <div class="w-8 h-8 rounded-full bg-slate-100 group-open:bg-purple-100 text-slate-500 group-open:text-brand-purple flex items-center justify-center transition-transform duration-300 group-open:rotate-180 flex-shrink-0">
+                <i data-lucide="chevron-down" class="w-4 h-4"></i>
+              </div>
+            </summary>
+            <div class="px-6 pb-6 pt-3 border-t border-slate-100 space-y-3 text-slate-700 text-sm sm:text-base leading-relaxed animate-fadeIn">
+              <p>
+                La experiencia de INGGEO se construye a partir del conocimiento acumulado de su equipo y de la
+                participación en proyectos desarrollados junto a empresas constructoras y organizaciones de distintos
+                sectores.
+              </p>
+              <p>
+                Nuestra trayectoria incluye trabajos vinculados a geomembranas HDPE, impermeabilización, construcción y
+                obras civiles, participando en proyectos desarrollados para empresas y constructoras de reconocida
+                presencia en el mercado. Cada proyecto ejecutado fortalece nuestras capacidades y nos permite continuar
+                construyendo relaciones basadas en confianza, calidad y cumplimiento.
+              </p>
+            </div>
+          </details>
+
+          <!-- 4. NUESTRO COMPROMISO -->
+          <details class="group bg-white rounded-2xl border border-slate-200 shadow-sm hover:border-purple-300 transition-all duration-300 open:shadow-md open:border-purple-400 overflow-hidden">
+            <summary class="p-5 sm:p-6 flex items-center justify-between cursor-pointer list-none select-none hover:bg-slate-50/80 transition">
+              <div class="flex items-center gap-3.5 sm:gap-4 pr-2">
+                <div class="w-11 h-11 rounded-xl bg-purple-100 text-brand-purple flex items-center justify-center flex-shrink-0 group-open:bg-brand-purple group-open:text-white transition">
+                  <i data-lucide="handshake" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <span class="inline-block text-[10px] font-bold uppercase tracking-widest text-brand-purple bg-purple-50 px-2 py-0.5 rounded mb-0.5">
+                    Compromiso
+                  </span>
+                  <h3 class="font-heading text-base sm:text-lg font-bold text-slate-900 group-hover:text-brand-purple transition leading-tight">
+                    Nuestro Compromiso
+                  </h3>
+                </div>
+              </div>
+              <div class="w-8 h-8 rounded-full bg-slate-100 group-open:bg-purple-100 text-slate-500 group-open:text-brand-purple flex items-center justify-center transition-transform duration-300 group-open:rotate-180 flex-shrink-0">
+                <i data-lucide="chevron-down" class="w-4 h-4"></i>
+              </div>
+            </summary>
+            <div class="px-6 pb-6 pt-3 border-t border-slate-100 space-y-3 text-slate-700 text-sm sm:text-base leading-relaxed animate-fadeIn">
+              <p>
+                Cada proyecto representa para INGGEO una responsabilidad. Nos comprometemos a aportar experiencia,
+                conocimiento técnico y capacidad de ejecución para responder a los requerimientos de nuestros clientes y
+                desarrollar soluciones seguras, eficientes y técnicamente confiables.
+              </p>
+              <p>
+                Buscamos establecer relaciones comerciales de largo plazo, sustentadas en resultados y en la confianza que
+                se construye cumpliendo nuestros compromisos.
+              </p>
+            </div>
+          </details>
         </div>
 
       </div>

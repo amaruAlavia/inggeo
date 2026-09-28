@@ -117,6 +117,22 @@ const initApp = () => {
           panel.classList.remove('animate-fadeIn');
         }
       });
+
+      if (window.lucide && typeof window.lucide.createIcons === 'function') {
+        window.lucide.createIcons();
+      }
+    });
+  });
+
+  // Preselección automática del formulario al hacer clic en cotizar especialidad
+  const serviceQuoteBtns = document.querySelectorAll('.service-quote-btn');
+  serviceQuoteBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const serviceVal = btn.getAttribute('data-service');
+      const selectEl = document.getElementById('form-servicio');
+      if (selectEl && serviceVal) {
+        selectEl.value = serviceVal;
+      }
     });
   });
 
