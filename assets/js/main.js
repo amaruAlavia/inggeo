@@ -136,7 +136,42 @@ const initApp = () => {
     });
   });
 
-  // 5. Interactive Philosophy / Methodology Timeline
+  // 5. Interactive Project Filter Tabs
+  const projectFilterBtns = document.querySelectorAll('.project-filter-btn');
+  const projectGroups = document.querySelectorAll('.project-group');
+
+  if (projectFilterBtns.length > 0) {
+    projectFilterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const filter = btn.getAttribute('data-filter');
+
+        // Actualizar apariencia de los botones
+        projectFilterBtns.forEach(b => {
+          b.classList.remove('bg-brand-purple', 'text-white', 'shadow-md', 'shadow-purple-950/20', 'border-purple-500');
+          b.classList.add('bg-white', 'text-slate-600', 'border-slate-200', 'hover:border-purple-300', 'hover:text-brand-purple');
+        });
+
+        btn.classList.add('bg-brand-purple', 'text-white', 'shadow-md', 'shadow-purple-950/20', 'border-purple-500');
+        btn.classList.remove('bg-white', 'text-slate-600', 'border-slate-200', 'hover:border-purple-300', 'hover:text-brand-purple');
+
+        // Mostrar / Ocultar grupos de proyectos
+        projectGroups.forEach(group => {
+          const groupType = group.getAttribute('data-group');
+          if (filter === 'all' || filter === groupType) {
+            group.classList.remove('hidden');
+          } else {
+            group.classList.add('hidden');
+          }
+        });
+
+        if (window.lucide && typeof window.lucide.createIcons === 'function') {
+          window.lucide.createIcons();
+        }
+      });
+    });
+  }
+
+  // 6. Interactive Philosophy / Methodology Timeline
   const methodCards = document.querySelectorAll('.method-step-card');
   methodCards.forEach(card => {
     card.addEventListener('mouseenter', () => {
@@ -145,7 +180,7 @@ const initApp = () => {
     });
   });
 
-  // 6. Quotation & WhatsApp Message Generator
+  // 7. Quotation & WhatsApp Message Generator
   const contactForm = document.getElementById('contact-form');
   const formFeedback = document.getElementById('form-feedback');
 
