@@ -192,3 +192,26 @@ summary::-webkit-details-marker {
 summary {
   list-style: none;
 }
+
+/* ==========================================================================
+   Gallery Panoramic Slider & Lightbox Custom Enhancements
+   ========================================================================== */
+#slider-main-img {
+  will-change: transform, opacity;
+  transition: opacity 0.25s cubic-bezier(0.16, 1, 0.3, 1), transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.slider-thumb {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.slider-thumb:hover {
+  transform: translateY(-2px);
+}
+
+#lightbox-img {
+  will-change: transform, opacity;
+  transition: opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1), transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+

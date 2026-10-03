@@ -212,6 +212,15 @@
             <span>Esencia, Misión y Visión</span>
           </a>
 
+          <a href="#galeria"
+            class="mobile-nav-link flex items-center gap-3 px-3.5 py-2.5 sm:py-3 rounded-xl text-sm font-medium text-slate-200 bg-slate-900/40 hover:bg-slate-900 hover:text-purple-300 border border-slate-800/80 hover:border-purple-500/50 transition">
+            <div
+              class="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-purple-950/60 border border-purple-800/40 flex items-center justify-center text-purple-400 flex-shrink-0">
+              <i data-lucide="camera" class="w-4 h-4"></i>
+            </div>
+            <span>Galería</span>
+          </a>
+
           <a href="#propuesta"
             class="mobile-nav-link flex items-center gap-3 px-3.5 py-2.5 sm:py-3 rounded-xl text-sm font-medium text-slate-200 bg-slate-900/40 hover:bg-slate-900 hover:text-purple-300 border border-slate-800/80 hover:border-purple-500/50 transition">
             <div
@@ -564,6 +573,126 @@
             </div>
           </div>
         </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       GALERÍA
+       ========================================================================= -->
+  <section id="galeria" class="py-16 sm:py-20 bg-slate-950 text-white relative overflow-hidden border-b border-slate-800 scroll-mt-20">
+    <!-- Luces ambientales industriales de fondo -->
+    <div class="absolute top-1/4 -left-20 w-96 h-96 bg-purple-900/15 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-10 -right-20 w-96 h-96 bg-purple-600/15 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+      <!-- Encabezado de la Sección -->
+      <div class="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
+        <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
+          Galería
+        </h2>
+      </div>
+
+      <!-- VISOR PRINCIPAL / ESCENARIO CINEMÁTICO (SOLO FOTOGRAFÍA) -->
+      <div class="relative w-full rounded-2xl sm:rounded-3xl overflow-hidden border border-slate-800 bg-slate-950 shadow-2xl group">
+
+        <!-- Contenedor con Altura Controlada y Fondo Ambiental Dinámico para fotos verticales/panorámicas -->
+        <div class="relative w-full h-[380px] sm:h-[480px] md:h-[540px] lg:h-[600px] overflow-hidden bg-slate-950 flex items-center justify-center">
+
+          <!-- Capa 1: Fondo difuminado que llena el marco -->
+          <img id="slider-ambient-bg"
+            src="assets/images/galeria/h1.jpeg"
+            alt="Ambiente"
+            class="absolute inset-0 w-full h-full object-cover blur-3xl scale-110 opacity-30 transition-all duration-700 pointer-events-none" />
+
+          <!-- Capa 2: Fotografía nítida completa (object-contain evita cualquier recorte) -->
+          <img id="slider-main-img"
+            src="assets/images/galeria/h1.jpeg"
+            alt="Fotografía"
+            class="relative z-10 max-h-full max-w-full w-auto h-auto object-contain transition-all duration-500 transform scale-100 cursor-pointer"
+            title="Haga clic para ampliar a pantalla completa" />
+
+          <!-- Barra de Control Superior en el Visor -->
+          <div class="absolute top-4 sm:top-6 left-4 sm:left-6 right-4 sm:right-6 z-20 flex items-center justify-between pointer-events-auto">
+            <span id="slider-counter"
+              class="text-[11px] sm:text-xs font-semibold text-slate-300 bg-slate-900/90 border border-slate-700/80 px-2.5 py-1 rounded-lg backdrop-blur-md">
+              01 / 04
+            </span>
+
+            <!-- Botones de Utilidad: Autoplay y Pantalla Completa -->
+            <div class="flex items-center gap-2">
+              <button id="slider-play-btn" type="button"
+                class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-slate-900/80 hover:bg-purple-600 text-slate-300 hover:text-white border border-slate-700/80 backdrop-blur-md transition flex items-center justify-center shadow-lg focus:outline-none cursor-pointer"
+                title="Pausar / Reanudar reproducción automática" aria-label="Reproducción automática">
+                <i data-lucide="pause" id="slider-play-icon" class="w-4 h-4"></i>
+              </button>
+              <button id="slider-fullscreen-btn" type="button"
+                class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-slate-900/80 hover:bg-purple-600 text-slate-300 hover:text-white border border-slate-700/80 backdrop-blur-md transition flex items-center justify-center shadow-lg focus:outline-none cursor-pointer"
+                title="Ver a pantalla completa" aria-label="Pantalla completa">
+                <i data-lucide="maximize-2" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Botón de Navegación Anterior (Izquierda) -->
+          <button id="slider-prev-btn" type="button"
+            class="absolute left-3 sm:left-6 z-20 w-11 h-11 sm:w-13 sm:h-13 rounded-2xl bg-slate-900/80 hover:bg-purple-600 text-slate-200 hover:text-white border border-slate-700/80 hover:border-purple-500 backdrop-blur-md transition-all flex items-center justify-center shadow-2xl focus:outline-none cursor-pointer transform -translate-y-1/2 top-1/2 hover:scale-105"
+            aria-label="Fotografía anterior">
+            <i data-lucide="chevron-left" class="w-6 h-6"></i>
+          </button>
+
+          <!-- Botón de Navegación Siguiente (Derecha) -->
+          <button id="slider-next-btn" type="button"
+            class="absolute right-3 sm:right-6 z-20 w-11 h-11 sm:w-13 sm:h-13 rounded-2xl bg-slate-900/80 hover:bg-purple-600 text-slate-200 hover:text-white border border-slate-700/80 hover:border-purple-500 backdrop-blur-md transition-all flex items-center justify-center shadow-2xl focus:outline-none cursor-pointer transform -translate-y-1/2 top-1/2 hover:scale-105"
+            aria-label="Fotografía siguiente">
+            <i data-lucide="chevron-right" class="w-6 h-6"></i>
+          </button>
+
+          <!-- Barra de Progreso del Slider (Autoplay) -->
+          <div class="absolute bottom-0 left-0 right-0 h-1 bg-slate-800/80 z-30 overflow-hidden">
+            <div id="slider-progress-bar" class="h-full bg-gradient-to-r from-purple-500 to-brand-purple transition-all duration-100 ease-linear w-0"></div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- TIRA DE MINIATURAS INTERACTIVAS (SOLO FOTOGRAFÍA) -->
+      <div class="mt-4 sm:mt-6 grid grid-cols-4 gap-2 sm:gap-4 max-w-2xl mx-auto">
+
+        <!-- Miniatura 1 -->
+        <button type="button"
+          class="slider-thumb group relative aspect-[16/10] sm:aspect-[16/9] rounded-xl overflow-hidden border-2 transition-all duration-300 focus:outline-none cursor-pointer border-purple-500 bg-purple-950/40 shadow-lg shadow-purple-950/50"
+          data-slide-index="0"
+          aria-label="Ver fotografía 1">
+          <img src="assets/images/galeria/h1.jpeg" alt="Fotografía 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+        </button>
+
+        <!-- Miniatura 2 -->
+        <button type="button"
+          class="slider-thumb group relative aspect-[16/10] sm:aspect-[16/9] rounded-xl overflow-hidden border-2 transition-all duration-300 focus:outline-none cursor-pointer border-slate-800 hover:border-slate-700 opacity-60 hover:opacity-100"
+          data-slide-index="1"
+          aria-label="Ver fotografía 2">
+          <img src="assets/images/galeria/h2.jpeg" alt="Fotografía 2" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+        </button>
+
+        <!-- Miniatura 3 -->
+        <button type="button"
+          class="slider-thumb group relative aspect-[16/10] sm:aspect-[16/9] rounded-xl overflow-hidden border-2 transition-all duration-300 focus:outline-none cursor-pointer border-slate-800 hover:border-slate-700 opacity-60 hover:opacity-100"
+          data-slide-index="2"
+          aria-label="Ver fotografía 3">
+          <img src="assets/images/galeria/h3.jpeg" alt="Fotografía 3" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+        </button>
+
+        <!-- Miniatura 4 -->
+        <button type="button"
+          class="slider-thumb group relative aspect-[16/10] sm:aspect-[16/9] rounded-xl overflow-hidden border-2 transition-all duration-300 focus:outline-none cursor-pointer border-slate-800 hover:border-slate-700 opacity-60 hover:opacity-100"
+          data-slide-index="3"
+          aria-label="Ver fotografía 4">
+          <img src="assets/images/galeria/h4.jpeg" alt="Fotografía 4" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" />
+        </button>
 
       </div>
 
@@ -2434,6 +2563,63 @@
 
     </div>
 
+  <!-- =========================================================================
+       MODAL LIGHTBOX DE GALERÍA (PANTALLA COMPLETA)
+       ========================================================================= -->
+  <div id="gallery-lightbox"
+    class="fixed inset-0 z-[100] hidden bg-slate-950/95 backdrop-blur-xl flex flex-col justify-between p-3 sm:p-6 transition-all duration-300 select-none"
+    role="dialog" aria-modal="true" aria-label="Visor de fotografía en terreno">
+
+    <!-- Barra Superior del Modal -->
+    <div class="flex items-center justify-between w-full max-w-7xl mx-auto z-10 pt-1 sm:pt-0">
+      <span id="lightbox-counter"
+        class="text-xs sm:text-sm font-semibold text-slate-300 bg-slate-900/90 px-3 py-1 rounded-lg border border-slate-800">
+        1 / 4
+      </span>
+
+      <!-- Botón Cerrar & Atajo de Teclado -->
+      <div class="flex items-center gap-2">
+        <span class="hidden md:inline-block text-[11px] text-slate-500 font-mono uppercase tracking-wider bg-slate-900 px-2 py-1 rounded border border-slate-800">
+          ESC para salir
+        </span>
+        <button id="lightbox-close-btn"
+          class="w-10 h-10 rounded-xl bg-slate-900 hover:bg-purple-600 text-slate-300 hover:text-white border border-slate-800 hover:border-purple-500 transition-all flex items-center justify-center shadow-lg focus:outline-none cursor-pointer"
+          aria-label="Cerrar visor">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Zona Central: Navegación Izquierda + Imagen Principal + Navegación Derecha -->
+    <div class="relative flex-1 flex items-center justify-center w-full max-w-7xl mx-auto my-2 sm:my-3 overflow-hidden">
+      <!-- Botón Anterior -->
+      <button id="lightbox-prev-btn"
+        class="absolute left-2 sm:left-4 z-20 w-11 h-11 sm:w-13 sm:h-13 rounded-2xl bg-slate-900/80 hover:bg-purple-600 text-slate-200 hover:text-white border border-slate-700/80 hover:border-purple-500 backdrop-blur-md transition-all flex items-center justify-center shadow-2xl focus:outline-none cursor-pointer"
+        aria-label="Fotografía anterior">
+        <i data-lucide="chevron-left" class="w-6 h-6"></i>
+      </button>
+
+      <!-- Contenedor de la Imagen con Transición Fluida -->
+      <div id="lightbox-img-container" class="relative max-w-full max-h-full flex items-center justify-center p-2">
+        <img id="lightbox-img" src="" alt="Fotografía"
+          class="max-w-full max-h-[75vh] sm:max-h-[82vh] w-auto h-auto object-contain rounded-2xl shadow-2xl border border-slate-800/80 transition-all duration-300 transform scale-100" />
+      </div>
+
+      <!-- Botón Siguiente -->
+      <button id="lightbox-next-btn"
+        class="absolute right-2 sm:right-4 z-20 w-11 h-11 sm:w-13 sm:h-13 rounded-2xl bg-slate-900/80 hover:bg-purple-600 text-slate-200 hover:text-white border border-slate-700/80 hover:border-purple-500 backdrop-blur-md transition-all flex items-center justify-center shadow-2xl focus:outline-none cursor-pointer"
+        aria-label="Siguiente fotografía">
+        <i data-lucide="chevron-right" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <!-- Barra Inferior del Modal: Indicadores Interactivos -->
+    <div class="w-full max-w-3xl mx-auto text-center z-10 pb-1 sm:pb-2">
+      <!-- Indicadores / Miniaturas Interactivas -->
+      <div id="lightbox-dots" class="flex items-center justify-center gap-2 sm:gap-2.5">
+        <!-- Renderizadas dinámicamente con JS -->
+      </div>
+    </div>
   </div>
 
   <!-- Script interactivo principal -->
